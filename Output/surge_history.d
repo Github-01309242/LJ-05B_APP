@@ -1,0 +1,11 @@
+..\..\output\surge_history.o: ..\..\App_Common\surge_history.c
+..\..\output\surge_history.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+..\..\output\surge_history.o: ..\..\App_Common\surge_history.h
+..\..\output\surge_history.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\surge_history.o: ..\..\Drv_Common\rtc_drv.h
+..\..\output\surge_history.o: ..\..\Drv_Common\surgemdl_drv.h
+..\..\output\surge_history.o: ..\..\Drv_Common\sensor_drv.h
+..\..\output\surge_history.o: ..\..\Drv_Common\norflash_drv.h
+..\..\output\surge_history.o: ..\..\App_Common\systeminf.h
+..\..\output\surge_history.o: ..\..\App_Common\store_app.h
+..\..\output\surge_history.o: ..\..\Drv_Common\led_drv.h

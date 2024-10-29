@@ -1,0 +1,12 @@
+..\..\output\hmi_app2.o: ..\..\App_Common\hmi_app2.c
+..\..\output\hmi_app2.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+..\..\output\hmi_app2.o: ..\..\Drv_Common\key_drv.h
+..\..\output\hmi_app2.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\hmi_app2.o: ..\..\Drv_Common\lcd12864_drv.h
+..\..\output\hmi_app2.o: ..\..\App_Common\picture.h
+..\..\output\hmi_app2.o: ..\..\App_Common\hmi_mainpage.h
+..\..\output\hmi_app2.o: ..\..\App_Common\hmi_surge_history.h
+..\..\output\hmi_app2.o: ..\..\App_Common\hmi_invalid_history.h
+..\..\output\hmi_app2.o: ..\..\App_Common\hmi_serialwork.h
+..\..\output\hmi_app2.o: ..\..\App_Common\surge_history.h
+..\..\output\hmi_app2.o: ..\..\Drv_Common\rtc_drv.h

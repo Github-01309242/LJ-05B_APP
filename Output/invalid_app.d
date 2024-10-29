@@ -1,0 +1,9 @@
+..\..\output\invalid_app.o: ..\..\App_Common\invalid_app.c
+..\..\output\invalid_app.o: ..\..\Drv_Common\switch_drv.h
+..\..\output\invalid_app.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\invalid_app.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+..\..\output\invalid_app.o: ..\..\Drv_Common\led_drv.h
+..\..\output\invalid_app.o: ..\..\Drv_Common\rtc_drv.h
+..\..\output\invalid_app.o: ..\..\Drv_Common\norflash_drv.h
+..\..\output\invalid_app.o: ..\..\App_Common\mov_invalid.h
+..\..\output\invalid_app.o: ..\..\App_Common\invalid_app.h

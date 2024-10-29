@@ -1,0 +1,2662 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [..\..\Output\LJ_05.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image ..\..\Output\LJ_05.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Tue Jun 04 13:27:14 2024
+<BR><P>
+<H3>Maximum Stack Usage =        248 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+Main_UI &rArr; LCD_ShowFloatNum &rArr; display_GB2312_string &rArr; display_graphic_8x16 &rArr; lcd_address &rArr; LCD_WR_REG &rArr; DelayNus
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[36]">ADC1_2_IRQHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[36]">ADC1_2_IRQHandler</a><BR>
+ <LI><a href="#[75]">qsort</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[75]">qsort</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[36]">ADC1_2_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[53]">ADC3_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[1e]">BusFault_Handler</a> from stm32f10x_it.o(i.BusFault_Handler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[39]">CAN1_RX1_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[3a]">CAN1_SCE_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[64]">CmpCb</a> from ntc_drv.o(i.CmpCb) referenced from ntc_drv.o(i.MedianAvgFltr)
+ <LI><a href="#[65]">CustomFuncHandlerCb</a> from modbus_app.o(i.CustomFuncHandlerCb) referenced from modbus_app.o(i.ModbusAppInit)
+ <LI><a href="#[2f]">DMA1_Channel1_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[30]">DMA1_Channel2_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[31]">DMA1_Channel3_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[32]">DMA1_Channel4_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[33]">DMA1_Channel5_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[34]">DMA1_Channel6_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[35]">DMA1_Channel7_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[5c]">DMA2_Channel1_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[5d]">DMA2_Channel2_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[5e]">DMA2_Channel3_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[5f]">DMA2_Channel4_5_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[21]">DebugMon_Handler</a> from stm32f10x_it.o(i.DebugMon_Handler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[c]">Display_Lock</a> from hmi_app.o(i.Display_Lock) referenced 2 times from hmi_app.o(.data)
+ <LI><a href="#[2a]">EXTI0_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[4c]">EXTI15_10_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[2b]">EXTI1_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[2c]">EXTI2_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[2d]">EXTI3_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[2e]">EXTI4_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[3b]">EXTI9_5_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[28]">FLASH_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[54]">FSMC_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[1c]">HardFault_Handler</a> from stm32f10x_it.o(i.HardFault_Handler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[1]">Hmipass_Task</a> from hmi_app.o(i.Hmipass_Task) referenced 2 times from main.o(.data)
+ <LI><a href="#[44]">I2C1_ER_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[43]">I2C1_EV_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[46]">I2C2_ER_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[45]">I2C2_EV_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[7]">Main_Menu_Func</a> from hmi_app.o(i.Main_Menu_Func) referenced 8 times from hmi_app.o(.data)
+ <LI><a href="#[6]">Main_UI</a> from hmi_app.o(i.Main_UI) referenced 2 times from hmi_app.o(.data)
+ <LI><a href="#[1d]">MemManage_Handler</a> from stm32f10x_it.o(i.MemManage_Handler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[15]">ModbusGetDispersed</a> from modbus_app.o(i.ModbusGetDispersed) referenced 2 times from modbus_app.o(.data)
+ <LI><a href="#[f]">ModbusGetHumi</a> from modbus_app.o(i.ModbusGetHumi) referenced 2 times from modbus_app.o(.data)
+ <LI><a href="#[e]">ModbusGetLightNum</a> from modbus_app.o(i.ModbusGetLightNum) referenced 2 times from modbus_app.o(.data)
+ <LI><a href="#[10]">ModbusGetPhaseVol</a> from modbus_app.o(i.ModbusGetPhaseVol) referenced 2 times from modbus_app.o(.data)
+ <LI><a href="#[d]">ModbusGetTemp</a> from modbus_app.o(i.ModbusGetTemp) referenced 2 times from modbus_app.o(.data)
+ <LI><a href="#[11]">ModbusSetLed1</a> from modbus_app.o(i.ModbusSetLed1) referenced 2 times from modbus_app.o(.data)
+ <LI><a href="#[12]">ModbusSetLed2</a> from modbus_app.o(i.ModbusSetLed2) referenced 2 times from modbus_app.o(.data)
+ <LI><a href="#[14]">ModbusSetRtcTime</a> from modbus_app.o(i.ModbusSetRtcTime) referenced 2 times from modbus_app.o(.data)
+ <LI><a href="#[13]">ModbusSetRtcTime_Pre</a> from modbus_app.o(i.ModbusSetRtcTime_Pre) referenced 2 times from modbus_app.o(.data)
+ <LI><a href="#[0]">ModbusTask</a> from modbus_app.o(i.ModbusTask) referenced 2 times from main.o(.data)
+ <LI><a href="#[5]">MovFail_Task</a> from movfail_app.o(i.MovFail_Task) referenced 2 times from main.o(.data)
+ <LI><a href="#[1b]">NMI_Handler</a> from stm32f10x_it.o(i.NMI_Handler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[25]">PVD_IRQHandler</a> from stm32f10x_it.o(i.PVD_IRQHandler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[22]">PendSV_Handler</a> from stm32f10x_it.o(i.PendSV_Handler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[29]">RCC_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[4d]">RTCAlarm_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[27]">RTC_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[6f]">ReadDiscreteInputsCb</a> from modbus_app.o(i.ReadDiscreteInputsCb) referenced from modbus_app.o(.constdata)
+ <LI><a href="#[6d]">ReadRegsCb</a> from modbus_app.o(i.ReadRegsCb) referenced from modbus_app.o(.constdata)
+ <LI><a href="#[1a]">Reset_Handler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[55]">SDIO_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[47]">SPI1_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[48]">SPI2_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[57]">SPI3_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[20]">SVC_Handler</a> from stm32f10x_it.o(i.SVC_Handler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[3]">Sensor_Task</a> from sensor_app.o(i.Sensor_Task) referenced 2 times from main.o(.data)
+ <LI><a href="#[a]">Setting_Child</a> from hmi_app.o(i.Setting_Child) referenced 2 times from hmi_app.o(.data)
+ <LI><a href="#[8]">SurgeInfo_Child</a> from hmi_app.o(i.SurgeInfo_Child) referenced 2 times from hmi_app.o(.data)
+ <LI><a href="#[2]">SurgeModuleworkTask</a> from surge_app.o(i.SurgeModuleworkTask) referenced 2 times from main.o(.data)
+ <LI><a href="#[4]">Switchinput_Task</a> from switchin_app.o(i.Switchinput_Task) referenced 2 times from main.o(.data)
+ <LI><a href="#[23]">SysTick_Handler</a> from systick_drv.o(i.SysTick_Handler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[61]">SystemInit</a> from system_stm32f10x.o(i.SystemInit) referenced from startup_stm32f10x_hd.o(.text)
+ <LI><a href="#[26]">TAMPER_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[3c]">TIM1_BRK_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[3f]">TIM1_CC_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[3e]">TIM1_TRG_COM_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[3d]">TIM1_UP_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[40]">TIM2_IRQHandler</a> from timing_drv.o(i.TIM2_IRQHandler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[41]">TIM3_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[42]">TIM4_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[56]">TIM5_IRQHandler</a> from porttimer.o(i.TIM5_IRQHandler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[5a]">TIM6_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[5b]">TIM7_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[4f]">TIM8_BRK_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[52]">TIM8_CC_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[51]">TIM8_TRG_COM_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[50]">TIM8_UP_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[63]">TaskScheduleCb</a> from main.o(i.TaskScheduleCb) referenced from main.o(i.AppInit)
+ <LI><a href="#[58]">UART4_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[59]">UART5_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[49]">USART1_IRQHandler</a> from portserial.o(i.USART1_IRQHandler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[4a]">USART2_IRQHandler</a> from surgecs_drv.o(i.USART2_IRQHandler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[4b]">USART3_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[4e]">USBWakeUp_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[37]">USB_HP_CAN1_TX_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[38]">USB_LP_CAN1_RX0_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[1f]">UsageFault_Handler</a> from stm32f10x_it.o(i.UsageFault_Handler) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[b]">VerInfo_Child</a> from hmi_app.o(i.VerInfo_Child) referenced 2 times from hmi_app.o(.data)
+ <LI><a href="#[24]">WWDG_IRQHandler</a> from startup_stm32f10x_hd.o(.text) referenced from startup_stm32f10x_hd.o(RESET)
+ <LI><a href="#[6e]">WriteRegsCb</a> from modbus_app.o(i.WriteRegsCb) referenced from modbus_app.o(.constdata)
+ <LI><a href="#[9]">YXInfo_Child</a> from hmi_app.o(i.YXInfo_Child) referenced 2 times from hmi_app.o(.data)
+ <LI><a href="#[62]">__main</a> from entry.o(.ARM.Collect$$$$00000000) referenced from startup_stm32f10x_hd.o(.text)
+ <LI><a href="#[19]">eMBFuncReadDiscreteInputs</a> from mbfuncdisc.o(i.eMBFuncReadDiscreteInputs) referenced 2 times from mb.o(.data)
+ <LI><a href="#[16]">eMBFuncReadHoldingRegister</a> from mbfuncholding.o(i.eMBFuncReadHoldingRegister) referenced 2 times from mb.o(.data)
+ <LI><a href="#[18]">eMBFuncWriteHoldingRegister</a> from mbfuncholding.o(i.eMBFuncWriteHoldingRegister) referenced 2 times from mb.o(.data)
+ <LI><a href="#[17]">eMBFuncWriteMultipleHoldingRegister</a> from mbfuncholding.o(i.eMBFuncWriteMultipleHoldingRegister) referenced 2 times from mb.o(.data)
+ <LI><a href="#[69]">eMBRTUReceive</a> from mbrtu.o(i.eMBRTUReceive) referenced from mb.o(i.eMBInit)
+ <LI><a href="#[68]">eMBRTUSend</a> from mbrtu.o(i.eMBRTUSend) referenced from mb.o(i.eMBInit)
+ <LI><a href="#[66]">eMBRTUStart</a> from mbrtu.o(i.eMBRTUStart) referenced from mb.o(i.eMBInit)
+ <LI><a href="#[67]">eMBRTUStop</a> from mbrtu.o(i.eMBRTUStop) referenced from mb.o(i.eMBInit)
+ <LI><a href="#[60]">main</a> from main.o(i.main) referenced from entry9a.o(.ARM.Collect$$$$0000000B)
+ <LI><a href="#[6a]">xMBRTUReceiveFSM</a> from mbrtu.o(i.xMBRTUReceiveFSM) referenced from mb.o(i.eMBInit)
+ <LI><a href="#[6c]">xMBRTUTimerT35Expired</a> from mbrtu.o(i.xMBRTUTimerT35Expired) referenced from mb.o(i.eMBInit)
+ <LI><a href="#[6b]">xMBRTUTransmitFSM</a> from mbrtu.o(i.xMBRTUTransmitFSM) referenced from mb.o(i.eMBInit)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[62]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(.text)
+</UL>
+<P><STRONG><a name="[155]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[70]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[80]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[156]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+
+<P><STRONG><a name="[157]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+
+<P><STRONG><a name="[158]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+
+<P><STRONG><a name="[159]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
+
+<P><STRONG><a name="[15a]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
+
+<P><STRONG><a name="[1a]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[36]"></a>ADC1_2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC1_2_IRQHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC1_2_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[53]"></a>ADC3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[39]"></a>CAN1_RX1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[3a]"></a>CAN1_SCE_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[2f]"></a>DMA1_Channel1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[30]"></a>DMA1_Channel2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[31]"></a>DMA1_Channel3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[32]"></a>DMA1_Channel4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[33]"></a>DMA1_Channel5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[34]"></a>DMA1_Channel6_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[35]"></a>DMA1_Channel7_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[5c]"></a>DMA2_Channel1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[5d]"></a>DMA2_Channel2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[5e]"></a>DMA2_Channel3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[5f]"></a>DMA2_Channel4_5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[2a]"></a>EXTI0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[4c]"></a>EXTI15_10_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[2b]"></a>EXTI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[2c]"></a>EXTI2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[2d]"></a>EXTI3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[2e]"></a>EXTI4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[3b]"></a>EXTI9_5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[28]"></a>FLASH_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[54]"></a>FSMC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[44]"></a>I2C1_ER_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[43]"></a>I2C1_EV_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[46]"></a>I2C2_ER_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[45]"></a>I2C2_EV_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[29]"></a>RCC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[4d]"></a>RTCAlarm_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[27]"></a>RTC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[55]"></a>SDIO_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[47]"></a>SPI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[48]"></a>SPI2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[57]"></a>SPI3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[26]"></a>TAMPER_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[3c]"></a>TIM1_BRK_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[3f]"></a>TIM1_CC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[3e]"></a>TIM1_TRG_COM_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[3d]"></a>TIM1_UP_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[41]"></a>TIM3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[42]"></a>TIM4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[5a]"></a>TIM6_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[5b]"></a>TIM7_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[4f]"></a>TIM8_BRK_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[52]"></a>TIM8_CC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[51]"></a>TIM8_TRG_COM_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[50]"></a>TIM8_UP_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[58]"></a>UART4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[59]"></a>UART5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[4b]"></a>USART3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[4e]"></a>USBWakeUp_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[37]"></a>USB_HP_CAN1_TX_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[38]"></a>USB_LP_CAN1_RX0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[24]"></a>WWDG_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_hd.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[72]"></a>__aeabi_uldivmod</STRONG> (Thumb, 98 bytes, Stack size 40 bytes, uldiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __aeabi_uldivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetMOVFail_PCT
+</UL>
+
+<P><STRONG><a name="[75]"></a>qsort</STRONG> (Thumb, 156 bytes, Stack size 40 bytes, qsort.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40 + In Cycle
+<LI>Call Chain = qsort &rArr;  qsort (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qsort
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MedianAvgFltr
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qsort
+</UL>
+
+<P><STRONG><a name="[15b]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+
+<P><STRONG><a name="[e5]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusAppInit
+</UL>
+
+<P><STRONG><a name="[15c]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+
+<P><STRONG><a name="[77]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+
+<P><STRONG><a name="[15d]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[15e]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[76]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_IRQHandler
+</UL>
+
+<P><STRONG><a name="[15f]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[160]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[78]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+
+<P><STRONG><a name="[d4]"></a>__aeabi_fmul</STRONG> (Thumb, 100 bytes, Stack size 8 bytes, fmul.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_fmul
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusGetTemp
+<LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusGetPhaseVol
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RecordLightningProc
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowFloatNum
+<LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeInfo_Child
+</UL>
+
+<P><STRONG><a name="[79]"></a>__aeabi_fdiv</STRONG> (Thumb, 124 bytes, Stack size 8 bytes, fdiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_fdiv
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_float_round
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RecordLightningProc
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempSensorProc
+</UL>
+
+<P><STRONG><a name="[7b]"></a>__aeabi_i2f</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, fflti.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = __aeabi_i2f &rArr; _float_epilogue
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_float_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeInfo_Child
+</UL>
+
+<P><STRONG><a name="[7d]"></a>__aeabi_ui2f</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, ffltui.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = __aeabi_ui2f &rArr; _float_epilogue
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_float_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RecordLightningProc
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempSensorProc
+</UL>
+
+<P><STRONG><a name="[d5]"></a>__aeabi_f2uiz</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, ffixui.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusGetTemp
+<LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusGetPhaseVol
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RecordLightningProc
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowFloatNum
+</UL>
+
+<P><STRONG><a name="[117]"></a>__aeabi_f2d</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, f2d.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeInfo_Child
+</UL>
+
+<P><STRONG><a name="[118]"></a>__aeabi_cdrcmple</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, cdrcmple.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeInfo_Child
+</UL>
+
+<P><STRONG><a name="[161]"></a>__aeabi_cfcmpeq</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, cfcmple.o(.text), UNUSED)
+
+<P><STRONG><a name="[bb]"></a>__aeabi_cfcmple</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, cfcmple.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetMOVFail_PCT
+</UL>
+
+<P><STRONG><a name="[bc]"></a>__aeabi_cfrcmple</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, cfrcmple.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetMOVFail_PCT
+</UL>
+
+<P><STRONG><a name="[74]"></a>__aeabi_llsl</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, llshl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+
+<P><STRONG><a name="[162]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+
+<P><STRONG><a name="[73]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+
+<P><STRONG><a name="[163]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+
+<P><STRONG><a name="[7e]"></a>localtime</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, localtime_w.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = localtime &rArr; _localtime
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_localtime
+</UL>
+<BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetRtcTime
+</UL>
+
+<P><STRONG><a name="[7f]"></a>_localtime</STRONG> (Thumb, 134 bytes, Stack size 8 bytes, localtime_i.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _localtime
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;localtime
+</UL>
+
+<P><STRONG><a name="[164]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, iusefp.o(.text), UNUSED)
+
+<P><STRONG><a name="[7a]"></a>_float_round</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, fepilogue.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
+</UL>
+
+<P><STRONG><a name="[7c]"></a>_float_epilogue</STRONG> (Thumb, 92 bytes, Stack size 4 bytes, fepilogue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = _float_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2f
+</UL>
+
+<P><STRONG><a name="[71]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
+</UL>
+
+<P><STRONG><a name="[165]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[166]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+
+<P><STRONG><a name="[167]"></a>__decompress1</STRONG> (Thumb, 86 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+
+<P><STRONG><a name="[88]"></a>ADC_Cmd</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32f10x_adc.o(i.ADC_Cmd))
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcInit
+</UL>
+
+<P><STRONG><a name="[81]"></a>ADC_DeInit</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, stm32f10x_adc.o(i.ADC_DeInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ADC_DeInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphResetCmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcInit
+</UL>
+
+<P><STRONG><a name="[8c]"></a>ADC_GetCalibrationStatus</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, stm32f10x_adc.o(i.ADC_GetCalibrationStatus))
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcInit
+</UL>
+
+<P><STRONG><a name="[b6]"></a>ADC_GetConversionValue</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f10x_adc.o(i.ADC_GetConversionValue))
+<BR><BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetAdcVal
+</UL>
+
+<P><STRONG><a name="[b5]"></a>ADC_GetFlagStatus</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_adc.o(i.ADC_GetFlagStatus))
+<BR><BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetAdcVal
+</UL>
+
+<P><STRONG><a name="[8a]"></a>ADC_GetResetCalibrationStatus</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, stm32f10x_adc.o(i.ADC_GetResetCalibrationStatus))
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcInit
+</UL>
+
+<P><STRONG><a name="[86]"></a>ADC_Init</STRONG> (Thumb, 70 bytes, Stack size 12 bytes, stm32f10x_adc.o(i.ADC_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = ADC_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcInit
+</UL>
+
+<P><STRONG><a name="[87]"></a>ADC_RegularChannelConfig</STRONG> (Thumb, 184 bytes, Stack size 20 bytes, stm32f10x_adc.o(i.ADC_RegularChannelConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = ADC_RegularChannelConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcInit
+</UL>
+
+<P><STRONG><a name="[89]"></a>ADC_ResetCalibration</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f10x_adc.o(i.ADC_ResetCalibration))
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcInit
+</UL>
+
+<P><STRONG><a name="[8d]"></a>ADC_SoftwareStartConvCmd</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32f10x_adc.o(i.ADC_SoftwareStartConvCmd))
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcInit
+</UL>
+
+<P><STRONG><a name="[8b]"></a>ADC_StartCalibration</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f10x_adc.o(i.ADC_StartCalibration))
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcInit
+</UL>
+
+<P><STRONG><a name="[94]"></a>BKP_DeInit</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, stm32f10x_bkp.o(i.BKP_DeInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = BKP_DeInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_BackupResetCmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+</UL>
+
+<P><STRONG><a name="[101]"></a>BKP_ReadBackupRegister</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, stm32f10x_bkp.o(i.BKP_ReadBackupRegister))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = BKP_ReadBackupRegister
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+</UL>
+
+<P><STRONG><a name="[107]"></a>BKP_WriteBackupRegister</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, stm32f10x_bkp.o(i.BKP_WriteBackupRegister))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = BKP_WriteBackupRegister
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+</UL>
+
+<P><STRONG><a name="[1e]"></a>BusFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_it.o(i.BusFault_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[e9]"></a>CustomFuncHandlerCbReg</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mb.o(i.CustomFuncHandlerCbReg))
+<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusAppInit
+</UL>
+
+<P><STRONG><a name="[dd]"></a>DMA_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f10x_dma.o(i.DMA_Cmd))
+<BR><BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_DMA_Enable
+</UL>
+
+<P><STRONG><a name="[114]"></a>DMA_DeInit</STRONG> (Thumb, 324 bytes, Stack size 0 bytes, stm32f10x_dma.o(i.DMA_DeInit))
+<BR><BR>[Called By]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeDmaInit
+</UL>
+
+<P><STRONG><a name="[134]"></a>DMA_GetCurrDataCounter</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f10x_dma.o(i.DMA_GetCurrDataCounter))
+<BR><BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_IRQHandler
+</UL>
+
+<P><STRONG><a name="[115]"></a>DMA_Init</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, stm32f10x_dma.o(i.DMA_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DMA_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeDmaInit
+</UL>
+
+<P><STRONG><a name="[de]"></a>DMA_SetCurrDataCounter</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_dma.o(i.DMA_SetCurrDataCounter))
+<BR><BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_DMA_Enable
+</UL>
+
+<P><STRONG><a name="[21]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.DebugMon_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[a3]"></a>DelayInit</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, delay.o(i.DelayInit))
+<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+</UL>
+
+<P><STRONG><a name="[9b]"></a>DelayNms</STRONG> (Thumb, 24 bytes, Stack size 12 bytes, delay.o(i.DelayNms))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = DelayNms &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayNus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
+</UL>
+
+<P><STRONG><a name="[9c]"></a>DelayNus</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, delay.o(i.DelayNus))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DelayNus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_REG
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CSendNack
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CSendAck
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CWaitAck
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CStop
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CStart
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CSendByte
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CReadByte
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayNms
+</UL>
+
+<P><STRONG><a name="[a8]"></a>EepromDrvInit</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, eeprom_drv.o(i.EepromDrvInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = EepromDrvInit &rArr; Eeprom_GPIO_Config &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Eeprom_GPIO_Config
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+</UL>
+
+<P><STRONG><a name="[b1]"></a>EraseNorflashForWrite</STRONG> (Thumb, 92 bytes, Stack size 24 bytes, norflash_drv.o(i.EraseNorflashForWrite))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = EraseNorflashForWrite &rArr; EraseNorflashSector &rArr; WaitNorflashWriteEnd &rArr; SPIReadWriteByte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashSector
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchinputProc
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RecordSurgeParam
+</UL>
+
+<P><STRONG><a name="[af]"></a>GPIO_Init</STRONG> (Thumb, 278 bytes, Stack size 24 bytes, stm32f10x_gpio.o(i.GPIO_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Switchinput_DrvInit
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDrvInit
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyDrvInit
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD12864_GPIO_Config
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gpio_Iint
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Eeprom_GPIO_Config
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchInit
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeGpioInit
+</UL>
+
+<P><STRONG><a name="[151]"></a>GPIO_PinRemapConfig</STRONG> (Thumb, 138 bytes, Stack size 20 bytes, stm32f10x_gpio.o(i.GPIO_PinRemapConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = GPIO_PinRemapConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[c2]"></a>GPIO_ReadInputDataBit</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_ReadInputDataBit))
+<BR><BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSwitchinputStatus
+<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_data_from_ROM
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIReadWriteByte
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyScan
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CWaitAck
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CReadByte
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ToggleLed
+</UL>
+
+<P><STRONG><a name="[a1]"></a>GPIO_ResetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_ResetBits))
+<BR><BR>[Called By]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TurnOnLed
+<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Display_Lock
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_command_to_ROM
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_n_bytes_data_from_ROM
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_graphic_8x16
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_graphic_16x16
+<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_data_from_ROM
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_REG
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_DATA
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIStart
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIReadWriteByte
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIInit
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CSendNack
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CSendAck
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CWaitAck
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CStop
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CStart
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CSendByte
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CReadByte
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
+</UL>
+
+<P><STRONG><a name="[c6]"></a>GPIO_SetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_SetBits))
+<BR><BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TurnOffLed
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear_screen
+<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Main_UI
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDrvInit
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_command_to_ROM
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_n_bytes_data_from_ROM
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_graphic_8x16
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_graphic_16x16
+<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_data_from_ROM
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_REG
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_DATA
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD12864_GPIO_Config
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIStop
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIReadWriteByte
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIInit
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gpio_Iint
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CSendNack
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CSendAck
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CWaitAck
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CStop
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CStart
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CSendByte
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CReadByte
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
+</UL>
+
+<P><STRONG><a name="[12e]"></a>GPIO_WriteBit</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_WriteBit))
+<BR><BR>[Called By]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ToggleLed
+</UL>
+
+<P><STRONG><a name="[b7]"></a>GetKeyVal</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, key_drv.o(i.GetKeyVal))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = GetKeyVal &rArr; KeyScan
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyScan
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hmipass_Task
+</UL>
+
+<P><STRONG><a name="[e6]"></a>GetModbusAddrData</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, store_app.o(i.GetModbusAddrData))
+<BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VerInfo_Child
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusAppInit
+</UL>
+
+<P><STRONG><a name="[e7]"></a>GetModbusBaudData</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, store_app.o(i.GetModbusBaudData))
+<BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VerInfo_Child
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusAppInit
+</UL>
+
+<P><STRONG><a name="[be]"></a>GetRtcTime</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, rtc_drv.o(i.GetRtcTime))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = GetRtcTime &rArr; localtime &rArr; _localtime
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_GetCounter
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;localtime
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchinputProc
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RecordLightningProc
+<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Main_UI
+</UL>
+
+<P><STRONG><a name="[e2]"></a>GetSPD_PCT</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, movfail_app.o(i.GetSPD_PCT))
+<BR><BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Main_UI
+</UL>
+
+<P><STRONG><a name="[e1]"></a>GetSPD_State</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, movfail_app.o(i.GetSPD_State))
+<BR><BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Main_UI
+</UL>
+
+<P><STRONG><a name="[ba]"></a>GetSensorData</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, sensor_drv.o(i.GetSensorData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GetSensorData
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetTempData
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusGetTemp
+<LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusGetPhaseVol
+<LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusGetHumi
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetMOVFail_PCT
+<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Main_UI
+</UL>
+
+<P><STRONG><a name="[ea]"></a>GetSurgeNum</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, surge_app.o(i.GetSurgeNum))
+<BR><BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusGetLightNum
+<LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeInfo_Child
+</UL>
+
+<P><STRONG><a name="[c1]"></a>GetSwitchinputStatus</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, switchinput_drv.o(i.GetSwitchinputStatus))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GetSwitchinputStatus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusGetDispersed
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchinputProc
+<LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MovFail_Task
+</UL>
+
+<P><STRONG><a name="[bd]"></a>GetSysRunTime</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, systick_drv.o(i.GetSysRunTime))
+<BR><BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetMOVFail_PCT
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyScan
+</UL>
+
+<P><STRONG><a name="[c0]"></a>GetTempData</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, ntc_drv.o(i.GetTempData))
+<BR><BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSensorData
+</UL>
+
+<P><STRONG><a name="[1c]"></a>HardFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_it.o(i.HardFault_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[1]"></a>Hmipass_Task</STRONG> (Thumb, 170 bytes, Stack size 8 bytes, hmi_app.o(i.Hmipass_Task))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = Hmipass_Task &rArr; clear_screen &rArr; lcd_address &rArr; LCD_WR_REG &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear_screen
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetKeyVal
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> main.o(.data)
+</UL>
+<P><STRONG><a name="[c9]"></a>I2CSendAck</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, eeprom_drv.o(i.I2CSendAck))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = I2CSendAck &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayNus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
+</UL>
+
+<P><STRONG><a name="[cb]"></a>I2CSendNack</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, eeprom_drv.o(i.I2CSendNack))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = I2CSendNack &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayNus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
+</UL>
+
+<P><STRONG><a name="[92]"></a>InitSysParam</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, store_app.o(i.InitSysParam))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = InitSysParam &rArr; WriteSysParam &rArr; WriteDataWithCheck &rArr; WriteEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetDisplayNum
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteSysParam
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadSysParam
+</UL>
+<BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppInit
+</UL>
+
+<P><STRONG><a name="[a5]"></a>KeyDrvInit</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, key_drv.o(i.KeyDrvInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = KeyDrvInit &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+</UL>
+
+<P><STRONG><a name="[d3]"></a>LCD_ShowFloatNum</STRONG> (Thumb, 156 bytes, Stack size 48 bytes, lcd12864_drv.o(i.LCD_ShowFloatNum))
+<BR><BR>[Stack]<UL><LI>Max Depth = 200<LI>Call Chain = LCD_ShowFloatNum &rArr; display_GB2312_string &rArr; display_graphic_8x16 &rArr; lcd_address &rArr; LCD_WR_REG &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2uiz
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mypow
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_GB2312_string
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeInfo_Child
+<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Main_UI
+</UL>
+
+<P><STRONG><a name="[d8]"></a>LCD_ShowIntNum</STRONG> (Thumb, 146 bytes, Stack size 40 bytes, lcd12864_drv.o(i.LCD_ShowIntNum))
+<BR><BR>[Stack]<UL><LI>Max Depth = 192<LI>Call Chain = LCD_ShowIntNum &rArr; display_GB2312_string &rArr; display_graphic_8x16 &rArr; lcd_address &rArr; LCD_WR_REG &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mypow
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_GB2312_string
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;YXInfo_Child
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VerInfo_Child
+<LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeInfo_Child
+<LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Setting_Child
+<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Main_UI
+</UL>
+
+<P><STRONG><a name="[d9]"></a>LCD_Showhanzi</STRONG> (Thumb, 30 bytes, Stack size 24 bytes, lcd12864_drv.o(i.LCD_Showhanzi))
+<BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = LCD_Showhanzi &rArr; display_GB2312_string &rArr; display_graphic_8x16 &rArr; lcd_address &rArr; LCD_WR_REG &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_GB2312_string
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;YXInfo_Child
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VerInfo_Child
+<LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeInfo_Child
+<LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Setting_Child
+<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Main_UI
+<LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Main_Menu_Func
+</UL>
+
+<P><STRONG><a name="[aa]"></a>Lcd12864DrvInit</STRONG> (Thumb, 144 bytes, Stack size 8 bytes, lcd12864_drv.o(i.Lcd12864DrvInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = Lcd12864DrvInit &rArr; clear_screen &rArr; lcd_address &rArr; LCD_WR_REG &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear_screen
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_REG
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD12864_GPIO_Config
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayNms
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+</UL>
+
+<P><STRONG><a name="[a4]"></a>LedDrvInit</STRONG> (Thumb, 108 bytes, Stack size 16 bytes, led_drv.o(i.LedDrvInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = LedDrvInit &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+</UL>
+
+<P><STRONG><a name="[1d]"></a>MemManage_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_it.o(i.MemManage_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[93]"></a>ModbusAppInit</STRONG> (Thumb, 44 bytes, Stack size 24 bytes, modbus_app.o(i.ModbusAppInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 228<LI>Call Chain = ModbusAppInit &rArr; ModbusSlaveInit &rArr; eMBInit &rArr; eMBRTUInit &rArr; xMBPortSerialInit &rArr; UartInit &rArr; USART_Init &rArr; RCC_GetClocksFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSlaveInit
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CustomFuncHandlerCbReg
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetModbusBaudData
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetModbusAddrData
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppInit
+</UL>
+
+<P><STRONG><a name="[e8]"></a>ModbusSlaveInit</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, modbus_slave.o(i.ModbusSlaveInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 204<LI>Call Chain = ModbusSlaveInit &rArr; eMBInit &rArr; eMBRTUInit &rArr; xMBPortSerialInit &rArr; UartInit &rArr; USART_Init &rArr; RCC_GetClocksFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBInit
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBEnable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusAppInit
+</UL>
+
+<P><STRONG><a name="[0]"></a>ModbusTask</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, modbus_app.o(i.ModbusTask))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ModbusTask &rArr; eMBPoll
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBPoll
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> main.o(.data)
+</UL>
+<P><STRONG><a name="[5]"></a>MovFail_Task</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, movfail_app.o(i.MovFail_Task))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = MovFail_Task &rArr; GetMOVFail_PCT &rArr; __aeabi_uldivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetMOVFail_PCT
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSwitchinputStatus
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> main.o(.data)
+</UL>
+<P><STRONG><a name="[1b]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.NMI_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[11d]"></a>NVIC_Init</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, misc.o(i.NVIC_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = NVIC_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerInit
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
+<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeUartInit
+</UL>
+
+<P><STRONG><a name="[11c]"></a>NVIC_PriorityGroupConfig</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, misc.o(i.NVIC_PriorityGroupConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
+<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeUartInit
+</UL>
+
+<P><STRONG><a name="[a9]"></a>NorflashDrvInit</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, norflash_drv.o(i.NorflashDrvInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = NorflashDrvInit &rArr; SPIInit &rArr; Gpio_Iint &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+</UL>
+
+<P><STRONG><a name="[25]"></a>PVD_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.PVD_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[f1]"></a>PWR_BackupAccessCmd</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f10x_pwr.o(i.PWR_BackupAccessCmd))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSetRtcTime
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+</UL>
+
+<P><STRONG><a name="[22]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.PendSV_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[128]"></a>PushDataToBuf</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, ntc_drv.o(i.PushDataToBuf))
+<BR><BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempSensorProc
+</UL>
+
+<P><STRONG><a name="[85]"></a>RCC_ADCCLKConfig</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_ADCCLKConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcInit
+</UL>
+
+<P><STRONG><a name="[113]"></a>RCC_AHBPeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_AHBPeriphClockCmd))
+<BR><BR>[Called By]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeDmaInit
+</UL>
+
+<P><STRONG><a name="[f0]"></a>RCC_APB1PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_APB1PeriphClockCmd))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSetRtcTime
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerInit
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeUartInit
+</UL>
+
+<P><STRONG><a name="[127]"></a>RCC_APB1PeriphResetCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_APB1PeriphResetCmd))
+<BR><BR>[Called By]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_DeInit
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_DeInit
+</UL>
+
+<P><STRONG><a name="[84]"></a>RCC_APB2PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd))
+<BR><BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Switchinput_DrvInit
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDrvInit
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyDrvInit
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD12864_GPIO_Config
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gpio_Iint
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Eeprom_GPIO_Config
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcInit
+<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchInit
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeGpioInit
+</UL>
+
+<P><STRONG><a name="[82]"></a>RCC_APB2PeriphResetCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_APB2PeriphResetCmd))
+<BR><BR>[Called By]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_DeInit
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_DeInit
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_DeInit
+</UL>
+
+<P><STRONG><a name="[95]"></a>RCC_BackupResetCmd</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_BackupResetCmd))
+<BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BKP_DeInit
+</UL>
+
+<P><STRONG><a name="[135]"></a>RCC_GetClocksFreq</STRONG> (Thumb, 192 bytes, Stack size 12 bytes, stm32f10x_rcc.o(i.RCC_GetClocksFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = RCC_GetClocksFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
+</UL>
+
+<P><STRONG><a name="[103]"></a>RCC_GetFlagStatus</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, stm32f10x_rcc.o(i.RCC_GetFlagStatus))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = RCC_GetFlagStatus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+</UL>
+
+<P><STRONG><a name="[102]"></a>RCC_LSEConfig</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_LSEConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+</UL>
+
+<P><STRONG><a name="[105]"></a>RCC_RTCCLKCmd</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_RTCCLKCmd))
+<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+</UL>
+
+<P><STRONG><a name="[104]"></a>RCC_RTCCLKConfig</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_RTCCLKConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+</UL>
+
+<P><STRONG><a name="[ed]"></a>RTC_EnterConfigMode</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, stm32f10x_rtc.o(i.RTC_EnterConfigMode))
+<BR><BR>[Called By]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_SetPrescaler
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_SetCounter
+<LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSetRtcTime
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+</UL>
+
+<P><STRONG><a name="[f3]"></a>RTC_ExitConfigMode</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32f10x_rtc.o(i.RTC_ExitConfigMode))
+<BR><BR>[Called By]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_SetPrescaler
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_SetCounter
+<LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSetRtcTime
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+</UL>
+
+<P><STRONG><a name="[bf]"></a>RTC_GetCounter</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32f10x_rtc.o(i.RTC_GetCounter))
+<BR><BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetRtcTime
+</UL>
+
+<P><STRONG><a name="[f2]"></a>RTC_SetCounter</STRONG> (Thumb, 24 bytes, Stack size 4 bytes, stm32f10x_rtc.o(i.RTC_SetCounter))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = RTC_SetCounter
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_ExitConfigMode
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_EnterConfigMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSetRtcTime
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+</UL>
+
+<P><STRONG><a name="[ee]"></a>RTC_SetPrescaler</STRONG> (Thumb, 26 bytes, Stack size 4 bytes, stm32f10x_rtc.o(i.RTC_SetPrescaler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = RTC_SetPrescaler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_ExitConfigMode
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_EnterConfigMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSetRtcTime
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+</UL>
+
+<P><STRONG><a name="[ef]"></a>RTC_WaitForLastTask</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32f10x_rtc.o(i.RTC_WaitForLastTask))
+<BR><BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSetRtcTime
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+</UL>
+
+<P><STRONG><a name="[106]"></a>RTC_WaitForSynchro</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, stm32f10x_rtc.o(i.RTC_WaitForSynchro))
+<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+</UL>
+
+<P><STRONG><a name="[fa]"></a>ReadEepromData</STRONG> (Thumb, 126 bytes, Stack size 16 bytes, eeprom_drv.o(i.ReadEepromData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = ReadEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CSendNack
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CSendAck
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CWaitAck
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CStop
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CStart
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CSendByte
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CReadByte
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadDataWithCheck
+</UL>
+
+<P><STRONG><a name="[96]"></a>ReadNorflashData</STRONG> (Thumb, 68 bytes, Stack size 24 bytes, norflash_drv.o(i.ReadNorflashData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = ReadNorflashData &rArr; SPIReadWriteByte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIStop
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIStart
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIReadWriteByte
+</UL>
+<BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CustomFuncHandlerCb
+<LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;YXInfo_Child
+<LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeInfo_Child
+</UL>
+
+<P><STRONG><a name="[cf]"></a>ReadSysParam</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, store_app.o(i.ReadSysParam))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = ReadSysParam &rArr; ReadDataWithCheck &rArr; ReadEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadDataWithCheck
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StoreSurgeNum
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitSysParam
+</UL>
+
+<P><STRONG><a name="[e0]"></a>RecvStr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, surge_app.o(i.RecvStr))
+<BR><BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Main_UI
+</UL>
+
+<P><STRONG><a name="[fd]"></a>RecvSurgeModuleStr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, surgecs_drv.o(i.RecvSurgeModuleStr))
+<BR><BR>[Called By]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RecordLightningProc
+</UL>
+
+<P><STRONG><a name="[a7]"></a>RtcDrvInit</STRONG> (Thumb, 184 bytes, Stack size 8 bytes, rtc_drv.o(i.RtcDrvInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = RtcDrvInit &rArr; DelayNms &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_WaitForLastTask
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_SetPrescaler
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_SetCounter
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_ExitConfigMode
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_EnterConfigMode
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockCmd
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWR_BackupAccessCmd
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_WaitForSynchro
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_RTCCLKConfig
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_RTCCLKCmd
+<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_LSEConfig
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_GetFlagStatus
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BKP_WriteBackupRegister
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BKP_ReadBackupRegister
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BKP_DeInit
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayNms
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+</UL>
+
+<P><STRONG><a name="[20]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.SVC_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[ad]"></a>SensorDrvInit</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, sensor_drv.o(i.SensorDrvInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = SensorDrvInit &rArr; TempDrvInit &rArr; AdcInit &rArr; ADC_RegularChannelConfig
+</UL>
+<BR>[Calls]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempDrvInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+</UL>
+
+<P><STRONG><a name="[109]"></a>SensorDrvProc</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, sensor_drv.o(i.SensorDrvProc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = SensorDrvProc &rArr; TempSensorProc &rArr; MedianAvgFltr &rArr; qsort &rArr;  qsort (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempSensorProc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sensor_Task
+</UL>
+
+<P><STRONG><a name="[3]"></a>Sensor_Task</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, sensor_app.o(i.Sensor_Task))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = Sensor_Task &rArr; SensorDrvProc &rArr; TempSensorProc &rArr; MedianAvgFltr &rArr; qsort &rArr;  qsort (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvProc
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> main.o(.data)
+</UL>
+<P><STRONG><a name="[d0]"></a>SetDisplayNum</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, surge_app.o(i.SetDisplayNum))
+<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitSysParam
+</UL>
+
+<P><STRONG><a name="[10b]"></a>SetModbusAddrParam</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, store_app.o(i.SetModbusAddrParam))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = SetModbusAddrParam &rArr; WriteSysParam &rArr; WriteDataWithCheck &rArr; WriteEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBSetSlaveAddr
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteSysParam
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Setting_Child
+</UL>
+
+<P><STRONG><a name="[10d]"></a>SetModbusBaudParam</STRONG> (Thumb, 56 bytes, Stack size 24 bytes, store_app.o(i.SetModbusBaudParam))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = SetModbusBaudParam &rArr; WriteSysParam &rArr; WriteDataWithCheck &rArr; WriteEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteSysParam
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Setting_Child
+</UL>
+
+<P><STRONG><a name="[ac]"></a>SurgeCsDrvInit</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, surgecs_drv.o(i.SurgeCsDrvInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = SurgeCsDrvInit &rArr; SurgeUartInit &rArr; USART_Init &rArr; RCC_GetClocksFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeUartInit
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeGpioInit
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeDmaInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+</UL>
+
+<P><STRONG><a name="[2]"></a>SurgeModuleworkTask</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, surge_app.o(i.SurgeModuleworkTask))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = SurgeModuleworkTask &rArr; RecordLightningProc &rArr; StoreSurgeNum &rArr; WriteSysParam &rArr; WriteDataWithCheck &rArr; WriteEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RecordLightningProc
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> main.o(.data)
+</UL>
+<P><STRONG><a name="[a6]"></a>Switchinput_DrvInit</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, switchinput_drv.o(i.Switchinput_DrvInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = Switchinput_DrvInit &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+</UL>
+
+<P><STRONG><a name="[4]"></a>Switchinput_Task</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, switchin_app.o(i.Switchinput_Task))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = Switchinput_Task &rArr; SwitchinputProc &rArr; WriteNorflashData &rArr; ProgramNorflashPage &rArr; WaitNorflashWriteEnd &rArr; SPIReadWriteByte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchinputProc
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> main.o(.data)
+</UL>
+<P><STRONG><a name="[23]"></a>SysTick_Handler</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, systick_drv.o(i.SysTick_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SysTick_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[152]"></a>SysTick_Init</STRONG> (Thumb, 92 bytes, Stack size 12 bytes, systick_drv.o(i.SysTick_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = SysTick_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[61]"></a>SystemInit</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, system_stm32f10x.o(i.SystemInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = SystemInit &rArr; SetSysClock &rArr; SetSysClockTo72
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClock
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(.text)
+</UL>
+<P><STRONG><a name="[40]"></a>TIM2_IRQHandler</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, timing_drv.o(i.TIM2_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = TIM2_IRQHandler &rArr; ToggleLed
+</UL>
+<BR>[Calls]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_GetITStatus
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearITPendingBit
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ToggleLed
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[56]"></a>TIM5_IRQHandler</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, porttimer.o(i.TIM5_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = TIM5_IRQHandler &rArr; TIM_GetITStatus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_GetITStatus
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearITPendingBit
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_SetCounter
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvvTIMERExpiredISR
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[12b]"></a>TIM_ClearFlag</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f10x_tim.o(i.TIM_ClearFlag))
+<BR><BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerInit
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersEnable
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersDisable
+</UL>
+
+<P><STRONG><a name="[123]"></a>TIM_ClearITPendingBit</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f10x_tim.o(i.TIM_ClearITPendingBit))
+<BR><BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM2_IRQHandler
+<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM5_IRQHandler
+</UL>
+
+<P><STRONG><a name="[12d]"></a>TIM_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f10x_tim.o(i.TIM_Cmd))
+<BR><BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerInit
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersEnable
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersDisable
+</UL>
+
+<P><STRONG><a name="[126]"></a>TIM_DeInit</STRONG> (Thumb, 424 bytes, Stack size 8 bytes, stm32f10x_tim.o(i.TIM_DeInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TIM_DeInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphResetCmd
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphResetCmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerInit
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
+</UL>
+
+<P><STRONG><a name="[121]"></a>TIM_GetITStatus</STRONG> (Thumb, 34 bytes, Stack size 12 bytes, stm32f10x_tim.o(i.TIM_GetITStatus))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = TIM_GetITStatus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM2_IRQHandler
+<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM5_IRQHandler
+</UL>
+
+<P><STRONG><a name="[12c]"></a>TIM_ITConfig</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_tim.o(i.TIM_ITConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerInit
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersEnable
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersDisable
+</UL>
+
+<P><STRONG><a name="[124]"></a>TIM_SetCounter</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_tim.o(i.TIM_SetCounter))
+<BR><BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersEnable
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersDisable
+<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM5_IRQHandler
+</UL>
+
+<P><STRONG><a name="[12a]"></a>TIM_TimeBaseInit</STRONG> (Thumb, 122 bytes, Stack size 0 bytes, stm32f10x_tim.o(i.TIM_TimeBaseInit))
+<BR><BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerInit
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
+</UL>
+
+<P><STRONG><a name="[91]"></a>TaskScheduleCbReg</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, systick_drv.o(i.TaskScheduleCbReg))
+<BR><BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppInit
+</UL>
+
+<P><STRONG><a name="[108]"></a>TempDrvInit</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, ntc_drv.o(i.TempDrvInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = TempDrvInit &rArr; AdcInit &rArr; ADC_RegularChannelConfig
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvInit
+</UL>
+
+<P><STRONG><a name="[10a]"></a>TempSensorProc</STRONG> (Thumb, 112 bytes, Stack size 24 bytes, ntc_drv.o(i.TempSensorProc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = TempSensorProc &rArr; MedianAvgFltr &rArr; qsort &rArr;  qsort (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
+<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PushDataToBuf
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MedianAvgFltr
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetAdcVal
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcToTemp10Mpl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvProc
+</UL>
+
+<P><STRONG><a name="[ab]"></a>TimingDrvInit</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, timing_drv.o(i.TimingDrvInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = TimingDrvInit &rArr; TimerInit &rArr; NVIC_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+</UL>
+
+<P><STRONG><a name="[122]"></a>ToggleLed</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, led_drv.o(i.ToggleLed))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ToggleLed
+</UL>
+<BR>[Calls]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_WriteBit
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM2_IRQHandler
+</UL>
+
+<P><STRONG><a name="[eb]"></a>TurnOffLed</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, led_drv.o(i.TurnOffLed))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TurnOffLed
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSetLed2
+<LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSetLed1
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchinputProc
+</UL>
+
+<P><STRONG><a name="[ec]"></a>TurnOnLed</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, led_drv.o(i.TurnOnLed))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TurnOnLed
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSetLed2
+<LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSetLed1
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchinputProc
+<LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Setting_Child
+</UL>
+
+<P><STRONG><a name="[49]"></a>USART1_IRQHandler</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, portserial.o(i.USART1_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = USART1_IRQHandler &rArr; USART_GetITStatus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvvUARTTxReadyISR
+<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvvUARTRxISR
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_GetITStatus
+<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_ClearITPendingBit
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[4a]"></a>USART2_IRQHandler</STRONG> (Thumb, 82 bytes, Stack size 8 bytes, surgecs_drv.o(i.USART2_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = USART2_IRQHandler &rArr; USART_GetITStatus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_ReceiveData
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_GetITStatus
+<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_ClearITPendingBit
+<LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_GetCurrDataCounter
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_DMA_Enable
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[98]"></a>USART_ClearFlag</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_usart.o(i.USART_ClearFlag))
+<BR><BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CustomFuncHandlerCb
+</UL>
+
+<P><STRONG><a name="[131]"></a>USART_ClearITPendingBit</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, stm32f10x_usart.o(i.USART_ClearITPendingBit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = USART_ClearITPendingBit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_IRQHandler
+</UL>
+
+<P><STRONG><a name="[11e]"></a>USART_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f10x_usart.o(i.USART_Cmd))
+<BR><BR>[Called By]<UL><LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeUartInit
+</UL>
+
+<P><STRONG><a name="[116]"></a>USART_DMACmd</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_usart.o(i.USART_DMACmd))
+<BR><BR>[Called By]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeDmaInit
+</UL>
+
+<P><STRONG><a name="[119]"></a>USART_DeInit</STRONG> (Thumb, 134 bytes, Stack size 8 bytes, stm32f10x_usart.o(i.USART_DeInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = USART_DeInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphResetCmd
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphResetCmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeUartInit
+</UL>
+
+<P><STRONG><a name="[9a]"></a>USART_GetFlagStatus</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_usart.o(i.USART_GetFlagStatus))
+<BR><BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CustomFuncHandlerCb
+</UL>
+
+<P><STRONG><a name="[12f]"></a>USART_GetITStatus</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, stm32f10x_usart.o(i.USART_GetITStatus))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = USART_GetITStatus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_IRQHandler
+</UL>
+
+<P><STRONG><a name="[11b]"></a>USART_ITConfig</STRONG> (Thumb, 74 bytes, Stack size 20 bytes, stm32f10x_usart.o(i.USART_ITConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = USART_ITConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeUartInit
+</UL>
+
+<P><STRONG><a name="[11a]"></a>USART_Init</STRONG> (Thumb, 210 bytes, Stack size 56 bytes, stm32f10x_usart.o(i.USART_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = USART_Init &rArr; RCC_GetClocksFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_GetClocksFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeUartInit
+</UL>
+
+<P><STRONG><a name="[133]"></a>USART_ReceiveData</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f10x_usart.o(i.USART_ReceiveData))
+<BR><BR>[Called By]<UL><LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialGetByte
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_IRQHandler
+</UL>
+
+<P><STRONG><a name="[99]"></a>USART_SendData</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f10x_usart.o(i.USART_SendData))
+<BR><BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CustomFuncHandlerCb
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialPutByte
+</UL>
+
+<P><STRONG><a name="[1f]"></a>UsageFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_it.o(i.UsageFault_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
+</UL>
+<P><STRONG><a name="[138]"></a>WriteEepromData</STRONG> (Thumb, 150 bytes, Stack size 32 bytes, eeprom_drv.o(i.WriteEepromData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = WriteEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CWaitAck
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CStop
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CStart
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CSendByte
+</UL>
+<BR>[Called By]<UL><LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteDataWithCheck
+</UL>
+
+<P><STRONG><a name="[100]"></a>WriteNorflashData</STRONG> (Thumb, 120 bytes, Stack size 24 bytes, norflash_drv.o(i.WriteNorflashData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = WriteNorflashData &rArr; ProgramNorflashPage &rArr; WaitNorflashWriteEnd &rArr; SPIReadWriteByte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProgramNorflashPage
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchinputProc
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RecordSurgeParam
+</UL>
+
+<P><STRONG><a name="[d1]"></a>WriteSysParam</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, store_app.o(i.WriteSysParam))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = WriteSysParam &rArr; WriteDataWithCheck &rArr; WriteEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteDataWithCheck
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StoreSurgeNum
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetModbusBaudParam
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetModbusAddrParam
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitSysParam
+</UL>
+
+<P><STRONG><a name="[139]"></a>__aeabi_assert</STRONG> (Thumb, 110 bytes, Stack size 16 bytes, retarget_io.o(i.__aeabi_assert))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = __aeabi_assert &rArr; fputs &rArr; fputc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputs
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBRTUTransmitFSM
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBRTUTimerT35Expired
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBRTUReceiveFSM
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUReceive
+</UL>
+
+<P><STRONG><a name="[168]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[169]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[16a]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+
+<P><STRONG><a name="[13b]"></a>abort</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, retarget_io.o(i.abort))
+<BR><BR>[Called By]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+
+<P><STRONG><a name="[c7]"></a>clear_screen</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, lcd12864_drv.o(i.clear_screen))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = clear_screen &rArr; lcd_address &rArr; LCD_WR_REG &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_address
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_DATA
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeInfo_Child
+<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Main_UI
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
+<LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hmipass_Task
+</UL>
+
+<P><STRONG><a name="[df]"></a>display_64x32</STRONG> (Thumb, 68 bytes, Stack size 24 bytes, lcd12864_drv.o(i.display_64x32))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = display_64x32 &rArr; lcd_address &rArr; LCD_WR_REG &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_address
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_DATA
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Main_Menu_Func
+</UL>
+
+<P><STRONG><a name="[d7]"></a>display_GB2312_string</STRONG> (Thumb, 364 bytes, Stack size 88 bytes, lcd12864_drv.o(i.display_GB2312_string))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = display_GB2312_string &rArr; display_graphic_8x16 &rArr; lcd_address &rArr; LCD_WR_REG &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_n_bytes_data_from_ROM
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_graphic_8x16
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_graphic_16x16
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Showhanzi
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowIntNum
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowFloatNum
+</UL>
+
+<P><STRONG><a name="[13e]"></a>display_graphic_16x16</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, lcd12864_drv.o(i.display_graphic_16x16))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = display_graphic_16x16 &rArr; lcd_address &rArr; LCD_WR_REG &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_address
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_DATA
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_GB2312_string
+</UL>
+
+<P><STRONG><a name="[13f]"></a>display_graphic_8x16</STRONG> (Thumb, 72 bytes, Stack size 24 bytes, lcd12864_drv.o(i.display_graphic_8x16))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = display_graphic_8x16 &rArr; lcd_address &rArr; LCD_WR_REG &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_address
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_DATA
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_GB2312_string
+</UL>
+
+<P><STRONG><a name="[f5]"></a>eMBEnable</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, mb.o(i.eMBEnable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = eMBEnable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSlaveInit
+</UL>
+
+<P><STRONG><a name="[19]"></a>eMBFuncReadDiscreteInputs</STRONG> (Thumb, 164 bytes, Stack size 40 bytes, mbfuncdisc.o(i.eMBFuncReadDiscreteInputs))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = eMBFuncReadDiscreteInputs &rArr; eMBRegDiscreteCB
+</UL>
+<BR>[Calls]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prveMBError2Exception
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRegDiscreteCB
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> mb.o(.data)
+</UL>
+<P><STRONG><a name="[16]"></a>eMBFuncReadHoldingRegister</STRONG> (Thumb, 134 bytes, Stack size 32 bytes, mbfuncholding.o(i.eMBFuncReadHoldingRegister))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = eMBFuncReadHoldingRegister &rArr; eMBRegHoldingCB
+</UL>
+<BR>[Calls]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRegHoldingCB
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prveMBError2Exception
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> mb.o(.data)
+</UL>
+<P><STRONG><a name="[18]"></a>eMBFuncWriteHoldingRegister</STRONG> (Thumb, 62 bytes, Stack size 24 bytes, mbfuncholding.o(i.eMBFuncWriteHoldingRegister))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = eMBFuncWriteHoldingRegister &rArr; eMBRegHoldingCB
+</UL>
+<BR>[Calls]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRegHoldingCB
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prveMBError2Exception
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> mb.o(.data)
+</UL>
+<P><STRONG><a name="[17]"></a>eMBFuncWriteMultipleHoldingRegister</STRONG> (Thumb, 106 bytes, Stack size 32 bytes, mbfuncholding.o(i.eMBFuncWriteMultipleHoldingRegister))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = eMBFuncWriteMultipleHoldingRegister &rArr; eMBRegHoldingCB
+</UL>
+<BR>[Calls]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRegHoldingCB
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prveMBError2Exception
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> mb.o(.data)
+</UL>
+<P><STRONG><a name="[f4]"></a>eMBInit</STRONG> (Thumb, 150 bytes, Stack size 32 bytes, mb.o(i.eMBInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 188<LI>Call Chain = eMBInit &rArr; eMBRTUInit &rArr; xMBPortSerialInit &rArr; UartInit &rArr; USART_Init &rArr; RCC_GetClocksFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortEventInit
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSlaveInit
+</UL>
+
+<P><STRONG><a name="[f6]"></a>eMBPoll</STRONG> (Thumb, 312 bytes, Stack size 16 bytes, mb.o(i.eMBPoll))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = eMBPoll
+</UL>
+<BR>[Calls]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortEventPost
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortEventGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusTask
+</UL>
+
+<P><STRONG><a name="[143]"></a>eMBRTUInit</STRONG> (Thumb, 76 bytes, Stack size 32 bytes, mbrtu.o(i.eMBRTUInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = eMBRTUInit &rArr; xMBPortSerialInit &rArr; UartInit &rArr; USART_Init &rArr; RCC_GetClocksFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBInit
+</UL>
+
+<P><STRONG><a name="[69]"></a>eMBRTUReceive</STRONG> (Thumb, 82 bytes, Stack size 24 bytes, mbrtu.o(i.eMBRTUReceive))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = eMBRTUReceive &rArr; __aeabi_assert &rArr; fputs &rArr; fputc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usMBCRC16
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> mb.o(i.eMBInit)
+</UL>
+<P><STRONG><a name="[68]"></a>eMBRTUSend</STRONG> (Thumb, 146 bytes, Stack size 24 bytes, mbrtu.o(i.eMBRTUSend))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = eMBRTUSend &rArr; vMBPortSerialEnable &rArr; USART_ITConfig
+</UL>
+<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usMBCRC16
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialPutByte
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> mb.o(i.eMBInit)
+</UL>
+<P><STRONG><a name="[66]"></a>eMBRTUStart</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, mbrtu.o(i.eMBRTUStart))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = eMBRTUStart &rArr; vMBPortSerialEnable &rArr; USART_ITConfig
+</UL>
+<BR>[Calls]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersEnable
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> mb.o(i.eMBInit)
+</UL>
+<P><STRONG><a name="[67]"></a>eMBRTUStop</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, mbrtu.o(i.eMBRTUStop))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = eMBRTUStop &rArr; vMBPortSerialEnable &rArr; USART_ITConfig
+</UL>
+<BR>[Calls]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersDisable
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> mb.o(i.eMBInit)
+</UL>
+<P><STRONG><a name="[140]"></a>eMBRegDiscreteCB</STRONG> (Thumb, 30 bytes, Stack size 24 bytes, modbus_slave.o(i.eMBRegDiscreteCB))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = eMBRegDiscreteCB
+</UL>
+<BR>[Called By]<UL><LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBFuncReadDiscreteInputs
+</UL>
+
+<P><STRONG><a name="[142]"></a>eMBRegHoldingCB</STRONG> (Thumb, 54 bytes, Stack size 24 bytes, modbus_slave.o(i.eMBRegHoldingCB))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = eMBRegHoldingCB
+</UL>
+<BR>[Called By]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBFuncWriteMultipleHoldingRegister
+<LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBFuncWriteHoldingRegister
+<LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBFuncReadHoldingRegister
+</UL>
+
+<P><STRONG><a name="[10c]"></a>eMBSetSlaveAddr</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, mb.o(i.eMBSetSlaveAddr))
+<BR><BR>[Called By]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetModbusAddrParam
+</UL>
+
+<P><STRONG><a name="[14d]"></a>fputc</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, retarget_io.o(i.fputc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = fputc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stderr_putchar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputs
+</UL>
+
+<P><STRONG><a name="[13a]"></a>fputs</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, fputs.o(i.fputs))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = fputs &rArr; fputc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+
+<P><STRONG><a name="[13d]"></a>get_n_bytes_data_from_ROM</STRONG> (Thumb, 94 bytes, Stack size 32 bytes, lcd12864_drv.o(i.get_n_bytes_data_from_ROM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = get_n_bytes_data_from_ROM &rArr; send_command_to_ROM
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_command_to_ROM
+<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_data_from_ROM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_GB2312_string
+</UL>
+
+<P><STRONG><a name="[60]"></a>main</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 236<LI>Call Chain = main &rArr; AppInit &rArr; ModbusAppInit &rArr; ModbusSlaveInit &rArr; eMBInit &rArr; eMBRTUInit &rArr; xMBPortSerialInit &rArr; UartInit &rArr; USART_Init &rArr; RCC_GetClocksFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Init
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinRemapConfig
+<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TaskHandler
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppInit
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
+</UL>
+<P><STRONG><a name="[d6]"></a>mypow</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, lcd12864_drv.o(i.mypow))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = mypow
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowIntNum
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowFloatNum
+</UL>
+
+<P><STRONG><a name="[141]"></a>prveMBError2Exception</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, mbutils.o(i.prveMBError2Exception))
+<BR><BR>[Called By]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBFuncWriteMultipleHoldingRegister
+<LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBFuncWriteHoldingRegister
+<LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBFuncReadHoldingRegister
+<LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBFuncReadDiscreteInputs
+</UL>
+
+<P><STRONG><a name="[150]"></a>send_command_to_ROM</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, lcd12864_drv.o(i.send_command_to_ROM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = send_command_to_ROM
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_n_bytes_data_from_ROM
+</UL>
+
+<P><STRONG><a name="[97]"></a>usMBCRC16</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, mbcrc.o(i.usMBCRC16))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = usMBCRC16
+</UL>
+<BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUSend
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUReceive
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CustomFuncHandlerCb
+</UL>
+
+<P><STRONG><a name="[14a]"></a>vMBPortSerialEnable</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, portserial.o(i.vMBPortSerialEnable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = vMBPortSerialEnable &rArr; USART_ITConfig
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_ITConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBRTUTransmitFSM
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUStop
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUStart
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUSend
+</UL>
+
+<P><STRONG><a name="[14c]"></a>vMBPortTimersDisable</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, porttimer.o(i.vMBPortTimersDisable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = vMBPortTimersDisable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ITConfig
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Cmd
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearFlag
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_SetCounter
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBRTUTimerT35Expired
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUStop
+</UL>
+
+<P><STRONG><a name="[14b]"></a>vMBPortTimersEnable</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, porttimer.o(i.vMBPortTimersEnable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = vMBPortTimersEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ITConfig
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Cmd
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearFlag
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_SetCounter
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBRTUReceiveFSM
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUStart
+</UL>
+
+<P><STRONG><a name="[145]"></a>xMBPortEventGet</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, portevent.o(i.xMBPortEventGet))
+<BR><BR>[Called By]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBPoll
+</UL>
+
+<P><STRONG><a name="[144]"></a>xMBPortEventInit</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, portevent.o(i.xMBPortEventInit))
+<BR><BR>[Called By]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBInit
+</UL>
+
+<P><STRONG><a name="[146]"></a>xMBPortEventPost</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, portevent.o(i.xMBPortEventPost))
+<BR><BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBRTUTransmitFSM
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBRTUTimerT35Expired
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBPoll
+</UL>
+
+<P><STRONG><a name="[154]"></a>xMBPortSerialGetByte</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, portserial.o(i.xMBPortSerialGetByte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = xMBPortSerialGetByte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_ReceiveData
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBRTUReceiveFSM
+</UL>
+
+<P><STRONG><a name="[147]"></a>xMBPortSerialInit</STRONG> (Thumb, 32 bytes, Stack size 24 bytes, portserial.o(i.xMBPortSerialInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = xMBPortSerialInit &rArr; UartInit &rArr; USART_Init &rArr; RCC_GetClocksFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchInit
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUInit
+</UL>
+
+<P><STRONG><a name="[149]"></a>xMBPortSerialPutByte</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, portserial.o(i.xMBPortSerialPutByte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = xMBPortSerialPutByte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SendData
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBRTUTransmitFSM
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUSend
+</UL>
+
+<P><STRONG><a name="[148]"></a>xMBPortTimersInit</STRONG> (Thumb, 112 bytes, Stack size 24 bytes, porttimer.o(i.xMBPortTimersInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = xMBPortTimersInit &rArr; NVIC_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockCmd
+<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TimeBaseInit
+<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ITConfig
+<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_DeInit
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearFlag
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_PriorityGroupConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUInit
+</UL>
+
+<P><STRONG><a name="[6a]"></a>xMBRTUReceiveFSM</STRONG> (Thumb, 140 bytes, Stack size 16 bytes, mbrtu.o(i.xMBRTUReceiveFSM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = xMBRTUReceiveFSM &rArr; __aeabi_assert &rArr; fputs &rArr; fputc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialGetByte
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersEnable
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> mb.o(i.eMBInit)
+</UL>
+<P><STRONG><a name="[6c]"></a>xMBRTUTimerT35Expired</STRONG> (Thumb, 96 bytes, Stack size 8 bytes, mbrtu.o(i.xMBRTUTimerT35Expired))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = xMBRTUTimerT35Expired &rArr; __aeabi_assert &rArr; fputs &rArr; fputc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortEventPost
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersDisable
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> mb.o(i.eMBInit)
+</UL>
+<P><STRONG><a name="[6b]"></a>xMBRTUTransmitFSM</STRONG> (Thumb, 116 bytes, Stack size 8 bytes, mbrtu.o(i.xMBRTUTransmitFSM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = xMBRTUTransmitFSM &rArr; __aeabi_assert &rArr; fputs &rArr; fputc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortEventPost
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialPutByte
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> mb.o(i.eMBInit)
+</UL><P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[90]"></a>AppInit</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, main.o(i.AppInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 236<LI>Call Chain = AppInit &rArr; ModbusAppInit &rArr; ModbusSlaveInit &rArr; eMBInit &rArr; eMBRTUInit &rArr; xMBPortSerialInit &rArr; UartInit &rArr; USART_Init &rArr; RCC_GetClocksFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TaskScheduleCbReg
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusAppInit
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitSysParam
+</UL>
+<BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a2]"></a>DrvInit</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, main.o(i.DrvInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = DrvInit &rArr; SurgeCsDrvInit &rArr; SurgeUartInit &rArr; USART_Init &rArr; RCC_GetClocksFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimingDrvInit
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Switchinput_DrvInit
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeCsDrvInit
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvInit
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NorflashDrvInit
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDrvInit
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyDrvInit
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EepromDrvInit
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[153]"></a>TaskHandler</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, main.o(i.TaskHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TaskHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[63]"></a>TaskScheduleCb</STRONG> (Thumb, 98 bytes, Stack size 0 bytes, main.o(i.TaskScheduleCb))
+<BR>[Address Reference Count : 1]<UL><LI> main.o(i.AppInit)
+</UL>
+<P><STRONG><a name="[fb]"></a>CalcCrc8</STRONG> (Thumb, 58 bytes, Stack size 12 bytes, store_app.o(i.CalcCrc8))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = CalcCrc8
+</UL>
+<BR>[Called By]<UL><LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteDataWithCheck
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadDataWithCheck
+</UL>
+
+<P><STRONG><a name="[f9]"></a>ReadDataWithCheck</STRONG> (Thumb, 54 bytes, Stack size 24 bytes, store_app.o(i.ReadDataWithCheck))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = ReadDataWithCheck &rArr; ReadEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalcCrc8
+</UL>
+<BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadSysParam
+</UL>
+
+<P><STRONG><a name="[137]"></a>WriteDataWithCheck</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, store_app.o(i.WriteDataWithCheck))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = WriteDataWithCheck &rArr; WriteEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteEepromData
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalcCrc8
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteSysParam
+</UL>
+
+<P><STRONG><a name="[c]"></a>Display_Lock</STRONG> (Thumb, 16 bytes, Stack size 16 bytes, hmi_app.o(i.Display_Lock))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = Display_Lock
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> hmi_app.o(.data)
+</UL>
+<P><STRONG><a name="[7]"></a>Main_Menu_Func</STRONG> (Thumb, 198 bytes, Stack size 16 bytes, hmi_app.o(i.Main_Menu_Func))
+<BR><BR>[Stack]<UL><LI>Max Depth = 192<LI>Call Chain = Main_Menu_Func &rArr; LCD_Showhanzi &rArr; display_GB2312_string &rArr; display_graphic_8x16 &rArr; lcd_address &rArr; LCD_WR_REG &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_64x32
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Showhanzi
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> hmi_app.o(.data)
+</UL>
+<P><STRONG><a name="[6]"></a>Main_UI</STRONG> (Thumb, 270 bytes, Stack size 48 bytes, hmi_app.o(i.Main_UI))
+<BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = Main_UI &rArr; LCD_ShowFloatNum &rArr; display_GB2312_string &rArr; display_graphic_8x16 &rArr; lcd_address &rArr; LCD_WR_REG &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear_screen
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RecvStr
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Showhanzi
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowIntNum
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowFloatNum
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSensorData
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSPD_State
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSPD_PCT
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetRtcTime
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> hmi_app.o(.data)
+</UL>
+<P><STRONG><a name="[a]"></a>Setting_Child</STRONG> (Thumb, 528 bytes, Stack size 16 bytes, hmi_app.o(i.Setting_Child))
+<BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = Setting_Child &rArr; LCD_ShowIntNum &rArr; display_GB2312_string &rArr; display_graphic_8x16 &rArr; lcd_address &rArr; LCD_WR_REG &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TurnOnLed
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Showhanzi
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowIntNum
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetModbusBaudParam
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetModbusAddrParam
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> hmi_app.o(.data)
+</UL>
+<P><STRONG><a name="[8]"></a>SurgeInfo_Child</STRONG> (Thumb, 442 bytes, Stack size 32 bytes, hmi_app.o(i.SurgeInfo_Child))
+<BR><BR>[Stack]<UL><LI>Max Depth = 232<LI>Call Chain = SurgeInfo_Child &rArr; LCD_ShowFloatNum &rArr; display_GB2312_string &rArr; display_graphic_8x16 &rArr; lcd_address &rArr; LCD_WR_REG &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear_screen
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2f
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
+<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadNorflashData
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Showhanzi
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowIntNum
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowFloatNum
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSurgeNum
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> hmi_app.o(.data)
+</UL>
+<P><STRONG><a name="[b]"></a>VerInfo_Child</STRONG> (Thumb, 242 bytes, Stack size 24 bytes, hmi_app.o(i.VerInfo_Child))
+<BR><BR>[Stack]<UL><LI>Max Depth = 216<LI>Call Chain = VerInfo_Child &rArr; LCD_ShowIntNum &rArr; display_GB2312_string &rArr; display_graphic_8x16 &rArr; lcd_address &rArr; LCD_WR_REG &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Showhanzi
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowIntNum
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetModbusBaudData
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetModbusAddrData
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> hmi_app.o(.data)
+</UL>
+<P><STRONG><a name="[9]"></a>YXInfo_Child</STRONG> (Thumb, 492 bytes, Stack size 16 bytes, hmi_app.o(i.YXInfo_Child))
+<BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = YXInfo_Child &rArr; LCD_ShowIntNum &rArr; display_GB2312_string &rArr; display_graphic_8x16 &rArr; lcd_address &rArr; LCD_WR_REG &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadNorflashData
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Showhanzi
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowIntNum
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> hmi_app.o(.data)
+</UL>
+<P><STRONG><a name="[fc]"></a>RecordLightningProc</STRONG> (Thumb, 216 bytes, Stack size 24 bytes, surge_app.o(i.RecordLightningProc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = RecordLightningProc &rArr; StoreSurgeNum &rArr; WriteSysParam &rArr; WriteDataWithCheck &rArr; WriteEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2uiz
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RecvSurgeModuleStr
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StoreSurgeNum
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RecordSurgeParam
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetRtcTime
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeModuleworkTask
+</UL>
+
+<P><STRONG><a name="[ff]"></a>RecordSurgeParam</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, surge_app.o(i.RecordSurgeParam))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = RecordSurgeParam &rArr; WriteNorflashData &rArr; ProgramNorflashPage &rArr; WaitNorflashWriteEnd &rArr; SPIReadWriteByte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteNorflashData
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashForWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RecordLightningProc
+</UL>
+
+<P><STRONG><a name="[fe]"></a>StoreSurgeNum</STRONG> (Thumb, 36 bytes, Stack size 24 bytes, surge_app.o(i.StoreSurgeNum))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = StoreSurgeNum &rArr; WriteSysParam &rArr; WriteDataWithCheck &rArr; WriteEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteSysParam
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadSysParam
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RecordLightningProc
+</UL>
+
+<P><STRONG><a name="[120]"></a>SwitchinputProc</STRONG> (Thumb, 122 bytes, Stack size 24 bytes, switchin_app.o(i.SwitchinputProc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = SwitchinputProc &rArr; WriteNorflashData &rArr; ProgramNorflashPage &rArr; WaitNorflashWriteEnd &rArr; SPIReadWriteByte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TurnOffLed
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSwitchinputStatus
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteNorflashData
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashForWrite
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TurnOnLed
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetRtcTime
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Switchinput_Task
+</UL>
+
+<P><STRONG><a name="[b9]"></a>GetMOVFail_PCT</STRONG> (Thumb, 190 bytes, Stack size 40 bytes, movfail_app.o(i.GetMOVFail_PCT))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = GetMOVFail_PCT &rArr; __aeabi_uldivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cfrcmple
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cfcmple
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSysRunTime
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSensorData
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MovFail_Task
+</UL>
+
+<P><STRONG><a name="[65]"></a>CustomFuncHandlerCb</STRONG> (Thumb, 148 bytes, Stack size 24 bytes, modbus_app.o(i.CustomFuncHandlerCb))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = CustomFuncHandlerCb &rArr; ReadNorflashData &rArr; SPIReadWriteByte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usMBCRC16
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SendData
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_GetFlagStatus
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_ClearFlag
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadNorflashData
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> modbus_app.o(i.ModbusAppInit)
+</UL>
+<P><STRONG><a name="[15]"></a>ModbusGetDispersed</STRONG> (Thumb, 62 bytes, Stack size 32 bytes, modbus_app.o(i.ModbusGetDispersed))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = ModbusGetDispersed &rArr; GetSwitchinputStatus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSwitchinputStatus
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> modbus_app.o(.data)
+</UL>
+<P><STRONG><a name="[f]"></a>ModbusGetHumi</STRONG> (Thumb, 28 bytes, Stack size 32 bytes, modbus_app.o(i.ModbusGetHumi))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = ModbusGetHumi &rArr; GetSensorData
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSensorData
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> modbus_app.o(.data)
+</UL>
+<P><STRONG><a name="[e]"></a>ModbusGetLightNum</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, modbus_app.o(i.ModbusGetLightNum))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ModbusGetLightNum
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSurgeNum
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> modbus_app.o(.data)
+</UL>
+<P><STRONG><a name="[10]"></a>ModbusGetPhaseVol</STRONG> (Thumb, 32 bytes, Stack size 32 bytes, modbus_app.o(i.ModbusGetPhaseVol))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = ModbusGetPhaseVol &rArr; __aeabi_fmul
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2uiz
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSensorData
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> modbus_app.o(.data)
+</UL>
+<P><STRONG><a name="[d]"></a>ModbusGetTemp</STRONG> (Thumb, 32 bytes, Stack size 32 bytes, modbus_app.o(i.ModbusGetTemp))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = ModbusGetTemp &rArr; __aeabi_fmul
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2uiz
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSensorData
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> modbus_app.o(.data)
+</UL>
+<P><STRONG><a name="[11]"></a>ModbusSetLed1</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, modbus_app.o(i.ModbusSetLed1))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ModbusSetLed1 &rArr; TurnOffLed
+</UL>
+<BR>[Calls]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TurnOffLed
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TurnOnLed
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> modbus_app.o(.data)
+</UL>
+<P><STRONG><a name="[12]"></a>ModbusSetLed2</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, modbus_app.o(i.ModbusSetLed2))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ModbusSetLed2 &rArr; TurnOffLed
+</UL>
+<BR>[Calls]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TurnOffLed
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TurnOnLed
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> modbus_app.o(.data)
+</UL>
+<P><STRONG><a name="[14]"></a>ModbusSetRtcTime</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, modbus_app.o(i.ModbusSetRtcTime))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = ModbusSetRtcTime &rArr; RTC_SetPrescaler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_WaitForLastTask
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_SetPrescaler
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_SetCounter
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_ExitConfigMode
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_EnterConfigMode
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockCmd
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWR_BackupAccessCmd
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> modbus_app.o(.data)
+</UL>
+<P><STRONG><a name="[13]"></a>ModbusSetRtcTime_Pre</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, modbus_app.o(i.ModbusSetRtcTime_Pre))
+<BR>[Address Reference Count : 1]<UL><LI> modbus_app.o(.data)
+</UL>
+<P><STRONG><a name="[6f]"></a>ReadDiscreteInputsCb</STRONG> (Thumb, 70 bytes, Stack size 24 bytes, modbus_app.o(i.ReadDiscreteInputsCb))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ReadDiscreteInputsCb
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> modbus_app.o(.constdata)
+</UL>
+<P><STRONG><a name="[6d]"></a>ReadRegsCb</STRONG> (Thumb, 102 bytes, Stack size 32 bytes, modbus_app.o(i.ReadRegsCb))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = ReadRegsCb
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> modbus_app.o(.constdata)
+</UL>
+<P><STRONG><a name="[6e]"></a>WriteRegsCb</STRONG> (Thumb, 136 bytes, Stack size 32 bytes, modbus_app.o(i.WriteRegsCb))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = WriteRegsCb
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> modbus_app.o(.constdata)
+</UL>
+<P><STRONG><a name="[83]"></a>AdcInit</STRONG> (Thumb, 132 bytes, Stack size 24 bytes, ntc_drv.o(i.AdcInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = AdcInit &rArr; ADC_RegularChannelConfig
+</UL>
+<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_ADCCLKConfig
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_StartCalibration
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_SoftwareStartConvCmd
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_ResetCalibration
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_RegularChannelConfig
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Init
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_GetResetCalibrationStatus
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_GetCalibrationStatus
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_DeInit
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Cmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempDrvInit
+</UL>
+
+<P><STRONG><a name="[8e]"></a>AdcToTemp10Mpl</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, ntc_drv.o(i.AdcToTemp10Mpl))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = AdcToTemp10Mpl &rArr; DescBinarySearch
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DescBinarySearch
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempSensorProc
+</UL>
+
+<P><STRONG><a name="[e4]"></a>ArithAvgFltr</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, ntc_drv.o(i.ArithAvgFltr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ArithAvgFltr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MedianAvgFltr
+</UL>
+
+<P><STRONG><a name="[64]"></a>CmpCb</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, ntc_drv.o(i.CmpCb))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = CmpCb
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> ntc_drv.o(i.MedianAvgFltr)
+</UL>
+<P><STRONG><a name="[8f]"></a>DescBinarySearch</STRONG> (Thumb, 48 bytes, Stack size 20 bytes, ntc_drv.o(i.DescBinarySearch))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = DescBinarySearch
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcToTemp10Mpl
+</UL>
+
+<P><STRONG><a name="[b4]"></a>GetAdcVal</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, ntc_drv.o(i.GetAdcVal))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GetAdcVal
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_GetFlagStatus
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_GetConversionValue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempSensorProc
+</UL>
+
+<P><STRONG><a name="[c3]"></a>GpioInit</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, ntc_drv.o(i.GpioInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = GpioInit &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempDrvInit
+</UL>
+
+<P><STRONG><a name="[e3]"></a>MedianAvgFltr</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, ntc_drv.o(i.MedianAvgFltr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = MedianAvgFltr &rArr; qsort &rArr;  qsort (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ArithAvgFltr
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qsort
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempSensorProc
+</UL>
+
+<P><STRONG><a name="[ae]"></a>Eeprom_GPIO_Config</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, eeprom_drv.o(i.Eeprom_GPIO_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Eeprom_GPIO_Config &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EepromDrvInit
+</UL>
+
+<P><STRONG><a name="[c8]"></a>I2CReadByte</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, eeprom_drv.o(i.I2CReadByte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = I2CReadByte &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayNus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
+</UL>
+
+<P><STRONG><a name="[ca]"></a>I2CSendByte</STRONG> (Thumb, 88 bytes, Stack size 16 bytes, eeprom_drv.o(i.I2CSendByte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = I2CSendByte &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayNus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteEepromData
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
+</UL>
+
+<P><STRONG><a name="[cc]"></a>I2CStart</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, eeprom_drv.o(i.I2CStart))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = I2CStart &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayNus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteEepromData
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
+</UL>
+
+<P><STRONG><a name="[cd]"></a>I2CStop</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, eeprom_drv.o(i.I2CStop))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = I2CStop &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayNus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteEepromData
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CWaitAck
+</UL>
+
+<P><STRONG><a name="[ce]"></a>I2CWaitAck</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, eeprom_drv.o(i.I2CWaitAck))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = I2CWaitAck &rArr; I2CStop &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CStop
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayNus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteEepromData
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
+</UL>
+
+<P><STRONG><a name="[b8]"></a>KeyScan</STRONG> (Thumb, 254 bytes, Stack size 24 bytes, key_drv.o(i.KeyScan))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = KeyScan
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSysRunTime
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetKeyVal
+</UL>
+
+<P><STRONG><a name="[9d]"></a>DisableNorflashWrite</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, norflash_drv.o(i.DisableNorflashWrite))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = DisableNorflashWrite &rArr; SPIReadWriteByte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIStop
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIStart
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIReadWriteByte
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashSector
+</UL>
+
+<P><STRONG><a name="[b0]"></a>EnableNorflashWrite</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, norflash_drv.o(i.EnableNorflashWrite))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = EnableNorflashWrite &rArr; SPIReadWriteByte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIStop
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIStart
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIReadWriteByte
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProgramNorflashPage
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashSector
+</UL>
+
+<P><STRONG><a name="[b2]"></a>EraseNorflashSector</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, norflash_drv.o(i.EraseNorflashSector))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = EraseNorflashSector &rArr; WaitNorflashWriteEnd &rArr; SPIReadWriteByte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitNorflashWriteEnd
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIStop
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIStart
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIReadWriteByte
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnableNorflashWrite
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisableNorflashWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashForWrite
+</UL>
+
+<P><STRONG><a name="[c5]"></a>Gpio_Iint</STRONG> (Thumb, 98 bytes, Stack size 8 bytes, norflash_drv.o(i.Gpio_Iint))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Gpio_Iint &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIInit
+</UL>
+
+<P><STRONG><a name="[f8]"></a>ProgramNorflashPage</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, norflash_drv.o(i.ProgramNorflashPage))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = ProgramNorflashPage &rArr; WaitNorflashWriteEnd &rArr; SPIReadWriteByte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitNorflashWriteEnd
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIStop
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIStart
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIReadWriteByte
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnableNorflashWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteNorflashData
+</UL>
+
+<P><STRONG><a name="[f7]"></a>SPIInit</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, norflash_drv.o(i.SPIInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = SPIInit &rArr; Gpio_Iint &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gpio_Iint
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NorflashDrvInit
+</UL>
+
+<P><STRONG><a name="[9f]"></a>SPIReadWriteByte</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, norflash_drv.o(i.SPIReadWriteByte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = SPIReadWriteByte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadNorflashData
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitNorflashWriteEnd
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProgramNorflashPage
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashSector
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnableNorflashWrite
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisableNorflashWrite
+</UL>
+
+<P><STRONG><a name="[9e]"></a>SPIStart</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, norflash_drv.o(i.SPIStart))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SPIStart
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadNorflashData
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitNorflashWriteEnd
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProgramNorflashPage
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashSector
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnableNorflashWrite
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisableNorflashWrite
+</UL>
+
+<P><STRONG><a name="[a0]"></a>SPIStop</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, norflash_drv.o(i.SPIStop))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SPIStop
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadNorflashData
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitNorflashWriteEnd
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProgramNorflashPage
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashSector
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnableNorflashWrite
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisableNorflashWrite
+</UL>
+
+<P><STRONG><a name="[b3]"></a>WaitNorflashWriteEnd</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, norflash_drv.o(i.WaitNorflashWriteEnd))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = WaitNorflashWriteEnd &rArr; SPIReadWriteByte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIStop
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIStart
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIReadWriteByte
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProgramNorflashPage
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashSector
+</UL>
+
+<P><STRONG><a name="[129]"></a>TimerInit</STRONG> (Thumb, 114 bytes, Stack size 24 bytes, timing_drv.o(i.TimerInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = TimerInit &rArr; NVIC_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockCmd
+<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TimeBaseInit
+<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ITConfig
+<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_DeInit
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Cmd
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearFlag
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimingDrvInit
+</UL>
+
+<P><STRONG><a name="[d2]"></a>LCD12864_GPIO_Config</STRONG> (Thumb, 168 bytes, Stack size 8 bytes, lcd12864_drv.o(i.LCD12864_GPIO_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = LCD12864_GPIO_Config &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
+</UL>
+
+<P><STRONG><a name="[da]"></a>LCD_WR_DATA</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, lcd12864_drv.o(i.LCD_WR_DATA))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = LCD_WR_DATA
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_64x32
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear_screen
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_graphic_8x16
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_graphic_16x16
+</UL>
+
+<P><STRONG><a name="[db]"></a>LCD_WR_REG</STRONG> (Thumb, 92 bytes, Stack size 16 bytes, lcd12864_drv.o(i.LCD_WR_REG))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = LCD_WR_REG &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayNus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_address
+</UL>
+
+<P><STRONG><a name="[14f]"></a>get_data_from_ROM</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, lcd12864_drv.o(i.get_data_from_ROM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = get_data_from_ROM
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_n_bytes_data_from_ROM
+</UL>
+
+<P><STRONG><a name="[13c]"></a>lcd_address</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, lcd12864_drv.o(i.lcd_address))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = lcd_address &rArr; LCD_WR_REG &rArr; DelayNus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_REG
+</UL>
+<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_64x32
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear_screen
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_graphic_8x16
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_graphic_16x16
+</UL>
+
+<P><STRONG><a name="[dc]"></a>MX_DMA_Enable</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, surgecs_drv.o(i.MX_DMA_Enable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = MX_DMA_Enable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_SetCurrDataCounter
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_Cmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_IRQHandler
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeDmaInit
+</UL>
+
+<P><STRONG><a name="[112]"></a>SurgeDmaInit</STRONG> (Thumb, 98 bytes, Stack size 48 bytes, surgecs_drv.o(i.SurgeDmaInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = SurgeDmaInit &rArr; DMA_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_DMACmd
+<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHBPeriphClockCmd
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_Init
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_DeInit
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_DMA_Enable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeCsDrvInit
+</UL>
+
+<P><STRONG><a name="[110]"></a>SurgeGpioInit</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, surgecs_drv.o(i.SurgeGpioInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SurgeGpioInit &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeCsDrvInit
+</UL>
+
+<P><STRONG><a name="[111]"></a>SurgeUartInit</STRONG> (Thumb, 126 bytes, Stack size 32 bytes, surgecs_drv.o(i.SurgeUartInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = SurgeUartInit &rArr; USART_Init &rArr; RCC_GetClocksFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockCmd
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_ITConfig
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_DeInit
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Cmd
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_PriorityGroupConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeCsDrvInit
+</UL>
+
+<P><STRONG><a name="[c4]"></a>GpioInit</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, portserial.o(i.GpioInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = GpioInit &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialInit
+</UL>
+
+<P><STRONG><a name="[11f]"></a>SwitchInit</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, portserial.o(i.SwitchInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SwitchInit &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialInit
+</UL>
+
+<P><STRONG><a name="[136]"></a>UartInit</STRONG> (Thumb, 104 bytes, Stack size 32 bytes, portserial.o(i.UartInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = UartInit &rArr; USART_Init &rArr; RCC_GetClocksFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_DeInit
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Cmd
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_PriorityGroupConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialInit
+</UL>
+
+<P><STRONG><a name="[130]"></a>prvvUARTRxISR</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, portserial.o(i.prvvUARTRxISR))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = prvvUARTRxISR
+</UL>
+<BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
+</UL>
+
+<P><STRONG><a name="[132]"></a>prvvUARTTxReadyISR</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, portserial.o(i.prvvUARTTxReadyISR))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = prvvUARTTxReadyISR
+</UL>
+<BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
+</UL>
+
+<P><STRONG><a name="[125]"></a>prvvTIMERExpiredISR</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, porttimer.o(i.prvvTIMERExpiredISR))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = prvvTIMERExpiredISR
+</UL>
+<BR>[Called By]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM5_IRQHandler
+</UL>
+
+<P><STRONG><a name="[10e]"></a>SetSysClock</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, system_stm32f10x.o(i.SetSysClock))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = SetSysClock &rArr; SetSysClockTo72
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClockTo72
+</UL>
+<BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[10f]"></a>SetSysClockTo72</STRONG> (Thumb, 214 bytes, Stack size 12 bytes, system_stm32f10x.o(i.SetSysClockTo72))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = SetSysClockTo72
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClock
+</UL>
+
+<P><STRONG><a name="[14e]"></a>stderr_putchar</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, retarget_io.o(i.stderr_putchar))
+<BR><BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
+</UL>
+<P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>
