@@ -1,6 +1,6 @@
 Dependencies for Project 'BH-STM32', Target 'NKP-LJ-05B_APP': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
-F (..\..\App_Common\main.c)(0x67208E31)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\App_Common -I ..\..\App_Modbus -I ..\..\Drv_Common -I ..\..\Drv_Modbus -I ..\..\Arm -I ..\..\Libraries -I ..\..\Libraries\FWlib\inc -I ..\..\Mid_Modbus -I ..\..\Mid_Modbus\rtu -I ..\..\Mid_Modbus\include -I ..\..\Rtt_Segger-I.\RTE\_NKP-LJ-05B_APP-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -D__STRICT_ANSI__-o ..\..\output\main.o --omf_browse ..\..\output\main.crf --depend ..\..\output\main.d)
+F (..\..\App_Common\main.c)(0x67219617)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\App_Common -I ..\..\App_Modbus -I ..\..\Drv_Common -I ..\..\Drv_Modbus -I ..\..\Arm -I ..\..\Libraries -I ..\..\Libraries\FWlib\inc -I ..\..\Mid_Modbus -I ..\..\Mid_Modbus\rtu -I ..\..\Mid_Modbus\include -I ..\..\Rtt_Segger-I.\RTE\_NKP-LJ-05B_APP-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -D__STRICT_ANSI__-o ..\..\output\main.o --omf_browse ..\..\output\main.crf --depend ..\..\output\main.d)
 I (..\..\Arm\stm32f10x.h)(0x5F1A958F)
 I (..\..\Arm\core_cm3.h)(0x5F1A958F)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
@@ -213,7 +213,7 @@ I (..\..\App_Common\hmi_invalid_history.h)(0x66739A8F)
 I (..\..\App_Common\hmi_serialwork.h)(0x6673D7B0)
 I (..\..\App_Common\surge_history.h)(0x6678CADB)
 I (..\..\Drv_Common\rtc_drv.h)(0x66027461)
-F (..\..\App_Common\hmi_mainpage.c)(0x67207656)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\App_Common -I ..\..\App_Modbus -I ..\..\Drv_Common -I ..\..\Drv_Modbus -I ..\..\Arm -I ..\..\Libraries -I ..\..\Libraries\FWlib\inc -I ..\..\Mid_Modbus -I ..\..\Mid_Modbus\rtu -I ..\..\Mid_Modbus\include -I ..\..\Rtt_Segger-I.\RTE\_NKP-LJ-05B_APP-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -D__STRICT_ANSI__-o ..\..\output\hmi_mainpage.o --omf_browse ..\..\output\hmi_mainpage.crf --depend ..\..\output\hmi_mainpage.d)
+F (..\..\App_Common\hmi_mainpage.c)(0x67219778)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\App_Common -I ..\..\App_Modbus -I ..\..\Drv_Common -I ..\..\Drv_Modbus -I ..\..\Arm -I ..\..\Libraries -I ..\..\Libraries\FWlib\inc -I ..\..\Mid_Modbus -I ..\..\Mid_Modbus\rtu -I ..\..\Mid_Modbus\include -I ..\..\Rtt_Segger-I.\RTE\_NKP-LJ-05B_APP-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -D__STRICT_ANSI__-o ..\..\output\hmi_mainpage.o --omf_browse ..\..\output\hmi_mainpage.crf --depend ..\..\output\hmi_mainpage.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5EC77604)
 I (..\..\Drv_Common\ntc_drv.h)(0x666FD87E)
@@ -793,7 +793,7 @@ I (..\..\Drv_Common\surgemdl_drv.h)(0x668E6C7A)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5EC775F6)
 I (..\..\Drv_Common\ntc_drv.h)(0x666FD87E)
 I (..\..\App_Common\surge_history.h)(0x6678CADB)
-F (..\..\Drv_Common\ntc_drv.c)(0x6720763E)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\App_Common -I ..\..\App_Modbus -I ..\..\Drv_Common -I ..\..\Drv_Modbus -I ..\..\Arm -I ..\..\Libraries -I ..\..\Libraries\FWlib\inc -I ..\..\Mid_Modbus -I ..\..\Mid_Modbus\rtu -I ..\..\Mid_Modbus\include -I ..\..\Rtt_Segger-I.\RTE\_NKP-LJ-05B_APP-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -D__STRICT_ANSI__-o ..\..\output\ntc_drv.o --omf_browse ..\..\output\ntc_drv.crf --depend ..\..\output\ntc_drv.d)
+F (..\..\Drv_Common\ntc_drv.c)(0x672196EA)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\App_Common -I ..\..\App_Modbus -I ..\..\Drv_Common -I ..\..\Drv_Modbus -I ..\..\Arm -I ..\..\Libraries -I ..\..\Libraries\FWlib\inc -I ..\..\Mid_Modbus -I ..\..\Mid_Modbus\rtu -I ..\..\Mid_Modbus\include -I ..\..\Rtt_Segger-I.\RTE\_NKP-LJ-05B_APP-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -D__STRICT_ANSI__-o ..\..\output\ntc_drv.o --omf_browse ..\..\output\ntc_drv.crf --depend ..\..\output\ntc_drv.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5EC77604)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5EC775FC)

@@ -12,17 +12,19 @@ static float g_tempData;
 static uint16_t g_temp10MplBuf[MAX_BUF_SIZE];
 	
 static const uint16_t g_ntcAdcTable[] = {
-  3448, 3420, 3390, 3360, 3329, 3319, 3285, 3250, 3215, 3178,     //-10   ~   -1℃
-	3141, 3103, 3064, 3024, 2984, 2943, 2901, 2859, 2816, 2773,     //0   ~   9℃
-	2729, 2685, 2640, 2596, 2550, 2505, 2459, 2413, 2368, 2322,     //10  ~  19℃
-	2276, 2230, 2184, 2138, 2093, 2048, 2003, 1958, 1913, 1870,     //20  ~  29℃
-	1826, 1783, 1740, 1698, 1657, 1616, 1576, 1536, 1497, 1458,     //30  ~  39℃
-	1420, 1383, 1347, 1311, 1276, 1242, 1208, 1175, 1143, 1112,     //40  ~  49℃
-	1081, 1051, 1022, 993,  965,  938,  912,  886,  861,  836,      //50  ~  59℃
-	813,  789,  767,  745,  724,  703,  683,  663,  644,  626,      //60  ~  69℃
-	608,  590,  573,  557,  541,  525,  510,  496,  481,  468,      //70  ~  79℃
-	454,  441,  429,  417,  405,  393,  382,  372,  361,  351,      //80  ~  89℃
-	341,  332,  323,  313,  305,  297,  289,  280,  273,  265,      //90  ~  99℃
+  3847, 3833, 3819, 3804, 3789, 3773, 3757, 3740, 3722, 3703,     //-30 ~  -21℃ 
+  3684, 3664, 3643, 3622, 3599, 3576, 3552, 3527, 3502, 3475,     //-20 ~  -11℃    
+  3448, 3420, 3390, 3360, 3329, 3319, 3285, 3250, 3215, 3178,     //-10 ~  -1℃
+  3141, 3103, 3064, 3024, 2984, 2943, 2901, 2859, 2816, 2773,     //0   ~   9℃
+  2729, 2685, 2640, 2596, 2550, 2505, 2459, 2413, 2368, 2322,     //10  ~  19℃
+  2276, 2230, 2184, 2138, 2093, 2048, 2003, 1958, 1913, 1870,     //20  ~  29℃
+  1826, 1783, 1740, 1698, 1657, 1616, 1576, 1536, 1497, 1458,     //30  ~  39℃
+  1420, 1383, 1347, 1311, 1276, 1242, 1208, 1175, 1143, 1112,     //40  ~  49℃
+  1081, 1051, 1022, 993,  965,  938,  912,  886,  861,  836,      //50  ~  59℃
+  813,  789,  767,  745,  724,  703,  683,  663,  644,  626,      //60  ~  69℃
+  608,  590,  573,  557,  541,  525,  510,  496,  481,  468,      //70  ~  79℃
+  454,  441,  429,  417,  405,  393,  382,  372,  361,  351,      //80  ~  89℃
+  341,  332,  323,  313,  305,  297,  289,  280,  273,  265,      //90  ~  99℃
   258,  251,  245,  238,  231,  225,  219,  213,  208,  202,      //100  ~  109℃
   197,  192,  187,  182,  177,  173,  168,  164,  159,  156,      //110  ~  119℃
   151,  148,  144,  140,  137,  134,  130,  127,  124,  120,      //120  ~  129℃
@@ -32,7 +34,7 @@ static const uint16_t g_ntcAdcTable[] = {
   58,                                                             //160  ~  169℃ 
 };
 #define NTC_TABLE_SIZE         (sizeof(g_ntcAdcTable) / sizeof(g_ntcAdcTable[0]))
-#define INDEX_TO_TEMP(index)   ((int32_t)(index - 10))
+#define INDEX_TO_TEMP(index)   ((int32_t)(index - 30))
 
 static void GpioInit(void)
 {
@@ -130,7 +132,7 @@ static int32_t DescBinarySearch(const uint16_t *arr, int32_t size, uint16_t key)
 }
 
 
-
+bool  g_NtcSensorIsOk = true ;
 
 /*
   通常使用补码表示负数，因为补码更能反映出负数的实际对应关系。
@@ -139,7 +141,7 @@ static int32_t DescBinarySearch(const uint16_t *arr, int32_t size, uint16_t key)
   反码：-5 = 1111 1010
   补码：-5 = 反码+1 = 1111 1011
 */
-//#define Table    //查表法
+#define Table    //查表法
 
 #ifdef Table
 static uint16_t AdcToTemp10Mpl(uint16_t adcVal)
@@ -149,12 +151,12 @@ static uint16_t AdcToTemp10Mpl(uint16_t adcVal)
 	
 	if (index == 0)
 	{
-    g_isSensorOk = false ;
+    g_NtcSensorIsOk = false ;
 		return 0;
 	}
   /*实现0.1℃的精度*/
   uint16_t temp10Mpl = INDEX_TO_TEMP(index - 1) * 10 + (g_ntcAdcTable[index - 1] - adcVal) * 10 / (g_ntcAdcTable[index - 1] - g_ntcAdcTable[index]);
-  g_isSensorOk = true ;
+  g_NtcSensorIsOk = true ;
   return temp10Mpl;
 }
 
@@ -164,6 +166,13 @@ static uint16_t AdcToTemp10Mpl(uint16_t adcVal)
   float vol;
   float res;
   float Tc;
+  uint16_t temp10Mpl;
+
+  if( adcVal > 0xFC0)
+  {
+   g_NtcSensorIsOk = false  ;    
+   return 0 ; 
+  }
 
   vol = (adcVal*3.3)/4096;
 
@@ -171,7 +180,11 @@ static uint16_t AdcToTemp10Mpl(uint16_t adcVal)
 
   Tc = (3950.0/(log(res/10000)+(3950.0/298.15)))-273.15;
   
-  return (Tc*10);
+  temp10Mpl = (int32_t )(Tc*10);
+  
+  g_NtcSensorIsOk = true  ;
+  
+  return temp10Mpl;
 }
 
 
@@ -246,7 +259,7 @@ void PushDataToBuf(uint16_t temp10Mpl)
 }
 
 
-bool  g_isSensorOk = true ;
+
 
 /**
 ***********************************************************
@@ -260,16 +273,6 @@ void TempSensorProc(void)
 	static uint16_t s_convertNum = 0;
 
 	uint16_t adcVal = GetAdcVal();
-  
-  if( adcVal > 0xFC0)
-  {
-   g_tempData = 6553.5f;     //报文输出0xFFFF
-    
-   g_isSensorOk = false  ;
-    
-   return ; 
-  }
-  else  g_isSensorOk = true  ;
   
 	uint16_t temp10Mpl = AdcToTemp10Mpl(adcVal);
 	
@@ -301,7 +304,7 @@ bool GetTempData(float *tempData)
 {
   *tempData = g_tempData;
   
-	if (g_isSensorOk)
+	if (g_NtcSensorIsOk)
 	{		
 		return true;
 	}

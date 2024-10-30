@@ -22,6 +22,13 @@ extern PictureDesc_t g_movPercentPicsDesc[];
 #define CENTIGRADE_ICON_POS_X   TEMP_VAL_POS_X + 4
 #define CENTIGRADE_ICON_POS_Y   3
 
+/*
+  通常使用补码表示负数，因为补码更能反映出负数的实际对应关系。
+  4.举例（十进制值 = 二进制值）
+  原码：+5 = 0000 0101
+  反码：-5 = 1111 1010
+  补码：-5 = 反码+1 = 1111 1011
+*/
 #define TempAdjust  0.0f
 static void DisplayTempInfo(void)
 {
@@ -34,20 +41,7 @@ static void DisplayTempInfo(void)
 	if (GetTempData(&tempData))
 	{
     memset(strBuf, 0, sizeof(strBuf));
-//    if(  tempData*10 < 0x0640)
-//    {
-//      tempData = tempData - TempAdjust ;
-//      LcdDrawString( TEMP_VAL_POS_X, TEMP_VAL_POS_Y, (unsigned char *)"+") ; 
-//    }
-//    else if ( tempData*10 > 0xFF9C  &&  tempData*10 < 0xFFFF)
-//    {
-//      tempData =  0xffff - (uint16_t )(tempData*10 - 1);
-//      tempData = tempData / 10.0f + TempAdjust;
-//      LcdDrawString( TEMP_VAL_POS_X, TEMP_VAL_POS_Y, (unsigned char *)"-") ;    
-//    } 
-//    else 
-//     return ;
-    
+   
     if(  ( (uint16_t )(tempData*10) & 0X8000 ) != 0x8000    )
     {
       tempData = tempData - TempAdjust ;
