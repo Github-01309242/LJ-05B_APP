@@ -1,0 +1,17 @@
+[33mcommit 8ec2eda8fa6004165bbffaa8ed0895bd9baa050f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Github-01309242 <13776114971@163.com>
+Date:   Wed Oct 30 13:11:35 2024 +0800
+
+    2024.10.30 修改0℃附近数值乱跳的问题
+
+[33mcommit e2306bb9bce61a915126e1e8a6b2c48c6e42e528[m
+Author: Github-01309242 <13776114971@163.com>
+Date:   Wed Oct 30 10:40:04 2024 +0800
+
+    2024年10月30日 修改-30℃~+160℃
+
+[33mcommit 191002bc14b608bd612bab2f7736296243ffc6ef[m
+Author: Github-01309242 <13776114971@163.com>
+Date:   Tue Oct 29 19:29:08 2024 +0800
+
+    first commit

@@ -54,7 +54,7 @@ static void DisplayTempInfo(void)
     }
     else 
     {
-      if( tempData < 0x1996)
+      if( tempData < 0x197B)
        {
         return ;
        }
