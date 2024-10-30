@@ -42,13 +42,23 @@ static void DisplayTempInfo(void)
 	{
     memset(strBuf, 0, sizeof(strBuf));
    
-    if(  ( (uint16_t )(tempData*10) & 0X8000 ) != 0x8000    )
+    if( ((uint16_t )(tempData*10) & 0X8000) != 0x8000 )
     {
+      if( tempData > 160)
+       {
+        return ;
+       }
+
       tempData = tempData - TempAdjust ;
       LcdDrawString( TEMP_VAL_POS_X, TEMP_VAL_POS_Y, (unsigned char *)"+") ; 
     }
     else 
     {
+      if( tempData < 0x1996)
+       {
+        return ;
+       }
+
       tempData =  0xffff - (uint16_t )(tempData*10  - 1);
       tempData = tempData / 10.0f + TempAdjust;
       LcdDrawString( TEMP_VAL_POS_X, TEMP_VAL_POS_Y, (unsigned char *)"-") ;    

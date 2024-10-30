@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\..\Output\NKP-LJ-05B_APP.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\..\Output\NKP-LJ-05B_APP.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Wed Oct 30 10:18:34 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Wed Oct 30 11:25:32 2024
 <BR><P>
 <H3>Maximum Stack Usage =        304 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -331,7 +331,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetMOVFail_PCT
+<BR>[Called By]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetMOVFail_PCT
 <LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 <LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
@@ -454,12 +454,14 @@ Global Symbols
 
 <P><STRONG><a name="[189]"></a>__aeabi_cfcmpeq</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, cfcmple.o(.text), UNUSED)
 
-<P><STRONG><a name="[e6]"></a>__aeabi_cfcmple</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, cfcmple.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetMOVFail_PCT
+<P><STRONG><a name="[c8]"></a>__aeabi_cfcmple</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, cfcmple.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetMOVFail_PCT
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayTempInfo
 </UL>
 
-<P><STRONG><a name="[e7]"></a>__aeabi_cfrcmple</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, cfrcmple.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetMOVFail_PCT
+<P><STRONG><a name="[c7]"></a>__aeabi_cfrcmple</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, cfrcmple.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetMOVFail_PCT
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayTempInfo
 </UL>
 
 <P><STRONG><a name="[18a]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
@@ -490,7 +492,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_localtime
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetRtcTime
+<BR>[Called By]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetRtcTime
 </UL>
 
 <P><STRONG><a name="[7a]"></a>_localtime</STRONG> (Thumb, 134 bytes, Stack size 8 bytes, localtime_i.o(.text))
@@ -605,12 +607,12 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcInit
 </UL>
 
-<P><STRONG><a name="[e1]"></a>ADC_GetConversionValue</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f10x_adc.o(i.ADC_GetConversionValue))
-<BR><BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetAdcVal
+<P><STRONG><a name="[e3]"></a>ADC_GetConversionValue</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f10x_adc.o(i.ADC_GetConversionValue))
+<BR><BR>[Called By]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetAdcVal
 </UL>
 
-<P><STRONG><a name="[e0]"></a>ADC_GetFlagStatus</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_adc.o(i.ADC_GetFlagStatus))
-<BR><BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetAdcVal
+<P><STRONG><a name="[e2]"></a>ADC_GetFlagStatus</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_adc.o(i.ADC_GetFlagStatus))
+<BR><BR>[Called By]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetAdcVal
 </UL>
 
 <P><STRONG><a name="[8e]"></a>ADC_GetResetCalibrationStatus</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, stm32f10x_adc.o(i.ADC_GetResetCalibrationStatus))
@@ -646,19 +648,19 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_BackupResetCmd
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+<BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 </UL>
 
 <P><STRONG><a name="[128]"></a>BKP_ReadBackupRegister</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, stm32f10x_bkp.o(i.BKP_ReadBackupRegister))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = BKP_ReadBackupRegister
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+<BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 </UL>
 
 <P><STRONG><a name="[12e]"></a>BKP_WriteBackupRegister</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, stm32f10x_bkp.o(i.BKP_WriteBackupRegister))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = BKP_WriteBackupRegister
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+<BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 </UL>
 
 <P><STRONG><a name="[15]"></a>BusFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_it.o(i.BusFault_Handler))
@@ -693,8 +695,8 @@ Global Symbols
 <P><STRONG><a name="[18]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.DebugMon_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
-<P><STRONG><a name="[c9]"></a>DelayInit</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, delay.o(i.DelayInit))
-<BR><BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+<P><STRONG><a name="[cb]"></a>DelayInit</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, delay.o(i.DelayInit))
+<BR><BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
 </UL>
 
 <P><STRONG><a name="[9f]"></a>DelayNms</STRONG> (Thumb, 24 bytes, Stack size 12 bytes, delay.o(i.DelayNms))
@@ -702,9 +704,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayNus
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
-<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+<BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
 </UL>
 
 <P><STRONG><a name="[a0]"></a>DelayNus</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, delay.o(i.DelayNus))
@@ -786,50 +788,50 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HmiTask
 </UL>
 
-<P><STRONG><a name="[ce]"></a>EepromDrvInit</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, eeprom_drv.o(i.EepromDrvInit))
+<P><STRONG><a name="[d0]"></a>EepromDrvInit</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, eeprom_drv.o(i.EepromDrvInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = EepromDrvInit &rArr; Eeprom_GPIO_Config &rArr; GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Eeprom_GPIO_Config
+<BR>[Calls]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Eeprom_GPIO_Config
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
 </UL>
 
-<P><STRONG><a name="[d6]"></a>EraseNorflashForWrite</STRONG> (Thumb, 92 bytes, Stack size 24 bytes, norflash_drv.o(i.EraseNorflashForWrite))
+<P><STRONG><a name="[d8]"></a>EraseNorflashForWrite</STRONG> (Thumb, 92 bytes, Stack size 24 bytes, norflash_drv.o(i.EraseNorflashForWrite))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = EraseNorflashForWrite &rArr; EraseNorflashSector &rArr; WaitNorflashWriteEnd &rArr; SPIReadWriteByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashSector
+<BR>[Calls]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashSector
 </UL>
 <BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchinputProc
-<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseSurgeHistoryInfo
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseSurgeHistoryInfo
 <LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RecordSurgeParam
 </UL>
 
-<P><STRONG><a name="[d9]"></a>EraseSurgeHistoryInfo</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, surge_history.o(i.EraseSurgeHistoryInfo))
+<P><STRONG><a name="[db]"></a>EraseSurgeHistoryInfo</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, surge_history.o(i.EraseSurgeHistoryInfo))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = EraseSurgeHistoryInfo &rArr; StoreSurgeNum &rArr; WriteSysParam &rArr; WriteDataWithCheck &rArr; WriteEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus
 </UL>
-<BR>[Calls]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ToggleLed
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashForWrite
-<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StoreSurgeNum
-<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PresetNum_Surge
+<BR>[Calls]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ToggleLed
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashForWrite
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StoreSurgeNum
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PresetNum_Surge
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProcKeyEvent
 </UL>
 
-<P><STRONG><a name="[dd]"></a>FeedDog</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, iwdg_drv.o(i.FeedDog))
+<P><STRONG><a name="[df]"></a>FeedDog</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, iwdg_drv.o(i.FeedDog))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = FeedDog
 </UL>
-<BR>[Calls]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IWDG_ReloadCounter
+<BR>[Calls]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IWDG_ReloadCounter
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sensor_Task
 </UL>
 
-<P><STRONG><a name="[d4]"></a>GPIO_Init</STRONG> (Thumb, 278 bytes, Stack size 24 bytes, stm32f10x_gpio.o(i.GPIO_Init))
+<P><STRONG><a name="[d6]"></a>GPIO_Init</STRONG> (Thumb, 278 bytes, Stack size 24 bytes, stm32f10x_gpio.o(i.GPIO_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Switchinput_DrvInit
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDrvInit
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyDrvInit
-<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Eeprom_GPIO_Config
+<BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Switchinput_DrvInit
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDrvInit
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyDrvInit
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Eeprom_GPIO_Config
 <LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchInit
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
 <LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeGpioInit
@@ -841,13 +843,13 @@ Global Symbols
 <P><STRONG><a name="[106]"></a>GPIO_PinRemapConfig</STRONG> (Thumb, 138 bytes, Stack size 20 bytes, stm32f10x_gpio.o(i.GPIO_PinRemapConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = GPIO_PinRemapConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyDrvInit
+<BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyDrvInit
 </UL>
 
 <P><STRONG><a name="[eb]"></a>GPIO_ReadInputDataBit</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_ReadInputDataBit))
-<BR><BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSwitchinputStatus
-<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ToggleLed
-<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyScan
+<BR><BR>[Called By]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSwitchinputStatus
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ToggleLed
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyScan
 <LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CWaitAck
 <LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CReadByte
 <LI><a href="#[175]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_data_from_ROM
@@ -857,7 +859,7 @@ Global Symbols
 <P><STRONG><a name="[f5]"></a>GPIO_ResetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_ResetBits))
 <BR><BR>[Called By]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TurnOffScreen
 <LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TurnOnLed
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
 <LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CSendNack
 <LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CSendAck
 <LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CWaitAck
@@ -882,8 +884,8 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear_screen
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TurnOnScreen
 <LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TurnOffLed
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDrvInit
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDrvInit
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
 <LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CSendNack
 <LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CSendAck
 <LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CWaitAck
@@ -908,7 +910,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[14e]"></a>GPIO_WriteBit</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_WriteBit))
-<BR><BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ToggleLed
+<BR><BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ToggleLed
 </UL>
 
 <P><STRONG><a name="[b0]"></a>GetInvalidTime</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, invalid_app.o(i.GetInvalidTime))
@@ -919,10 +921,10 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayInvalidTimeInfo
 </UL>
 
-<P><STRONG><a name="[e2]"></a>GetKeyVal</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, key_drv.o(i.GetKeyVal))
+<P><STRONG><a name="[e4]"></a>GetKeyVal</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, key_drv.o(i.GetKeyVal))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = GetKeyVal &rArr; KeyScan
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyScan
+<BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyScan
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProcKeyEvent
 </UL>
@@ -945,7 +947,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeHistoryProc
 </UL>
 
-<P><STRONG><a name="[c7]"></a>GetRtcTime</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, rtc_drv.o(i.GetRtcTime))
+<P><STRONG><a name="[c9]"></a>GetRtcTime</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, rtc_drv.o(i.GetRtcTime))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = GetRtcTime &rArr; localtime &rArr; _localtime
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_GetCounter
@@ -962,7 +964,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetTempData
 <LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSurgemdlData
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetMOVFail_PCT
+<BR>[Called By]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetMOVFail_PCT
 <LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeHistoryProc
 <LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusGetTemp
 <LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusGetPhaseVol
@@ -984,19 +986,19 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSensorData
 </UL>
 
-<P><STRONG><a name="[e5]"></a>GetSwitchinputStatus</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, switch_drv.o(i.GetSwitchinputStatus))
+<P><STRONG><a name="[e7]"></a>GetSwitchinputStatus</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, switch_drv.o(i.GetSwitchinputStatus))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GetSwitchinputStatus
 </UL>
 <BR>[Calls]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetMOVFail_PCT
+<BR>[Called By]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetMOVFail_PCT
 <LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchinputProc
 <LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusGetDispersed
 </UL>
 
 <P><STRONG><a name="[e8]"></a>GetSysRunTime</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, systick_drv.o(i.GetSysRunTime))
-<BR><BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetMOVFail_PCT
-<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyScan
+<BR><BR>[Called By]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetMOVFail_PCT
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyScan
 </UL>
 
 <P><STRONG><a name="[c4]"></a>GetTempData</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, ntc_drv.o(i.GetTempData))
@@ -1049,23 +1051,23 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[105]"></a>IWDG_Enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f10x_iwdg.o(i.IWDG_Enable))
-<BR><BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IwdgDrvInit
+<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IwdgDrvInit
 </UL>
 
-<P><STRONG><a name="[de]"></a>IWDG_ReloadCounter</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f10x_iwdg.o(i.IWDG_ReloadCounter))
-<BR><BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FeedDog
+<P><STRONG><a name="[e0]"></a>IWDG_ReloadCounter</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f10x_iwdg.o(i.IWDG_ReloadCounter))
+<BR><BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FeedDog
 </UL>
 
 <P><STRONG><a name="[103]"></a>IWDG_SetPrescaler</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f10x_iwdg.o(i.IWDG_SetPrescaler))
-<BR><BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IwdgDrvInit
+<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IwdgDrvInit
 </UL>
 
 <P><STRONG><a name="[104]"></a>IWDG_SetReload</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f10x_iwdg.o(i.IWDG_SetReload))
-<BR><BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IwdgDrvInit
+<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IwdgDrvInit
 </UL>
 
 <P><STRONG><a name="[102]"></a>IWDG_WriteAccessCmd</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f10x_iwdg.o(i.IWDG_WriteAccessCmd))
-<BR><BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IwdgDrvInit
+<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IwdgDrvInit
 </UL>
 
 <P><STRONG><a name="[fc]"></a>InitIrqAfterBoot</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, iap_drv.o(i.InitIrqAfterBoot))
@@ -1079,7 +1081,7 @@ Global Symbols
 <P><STRONG><a name="[96]"></a>InitSysParam</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, store_app.o(i.InitSysParam))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = InitSysParam &rArr; WriteSysParam &rArr; WriteDataWithCheck &rArr; WriteEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus
 </UL>
-<BR>[Calls]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PresetNum_Surge
+<BR>[Calls]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PresetNum_Surge
 <LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteSysParam
 <LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadSysParam
 </UL>
@@ -1094,7 +1096,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(.data)
 </UL>
-<P><STRONG><a name="[d1]"></a>IwdgDrvInit</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, iwdg_drv.o(i.IwdgDrvInit))
+<P><STRONG><a name="[d3]"></a>IwdgDrvInit</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, iwdg_drv.o(i.IwdgDrvInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = IwdgDrvInit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IWDG_WriteAccessCmd
@@ -1102,20 +1104,20 @@ Global Symbols
 <LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IWDG_SetPrescaler
 <LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IWDG_Enable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
 </UL>
 
-<P><STRONG><a name="[cb]"></a>KeyDrvInit</STRONG> (Thumb, 94 bytes, Stack size 16 bytes, key_drv.o(i.KeyDrvInit))
+<P><STRONG><a name="[cd]"></a>KeyDrvInit</STRONG> (Thumb, 94 bytes, Stack size 16 bytes, key_drv.o(i.KeyDrvInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = KeyDrvInit &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinRemapConfig
 <LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
 </UL>
 
-<P><STRONG><a name="[d0]"></a>Lcd12864DrvInit</STRONG> (Thumb, 148 bytes, Stack size 8 bytes, lcd12864_drv.o(i.Lcd12864DrvInit))
+<P><STRONG><a name="[d2]"></a>Lcd12864DrvInit</STRONG> (Thumb, 148 bytes, Stack size 8 bytes, lcd12864_drv.o(i.Lcd12864DrvInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = Lcd12864DrvInit &rArr; clear_screen &rArr; lcd_address &rArr; LCD_WR_REG &rArr; DelayNus
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear_screen
@@ -1126,7 +1128,7 @@ Global Symbols
 <LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_REG
 <LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD12864_GPIO_Config
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
 </UL>
 
 <P><STRONG><a name="[a7]"></a>LcdDrawChinese</STRONG> (Thumb, 30 bytes, Stack size 24 bytes, lcd12864_drv.o(i.LcdDrawChinese))
@@ -1168,14 +1170,14 @@ Global Symbols
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplaySurgeNumInfo
 </UL>
 
-<P><STRONG><a name="[ca]"></a>LedDrvInit</STRONG> (Thumb, 108 bytes, Stack size 16 bytes, led_drv.o(i.LedDrvInit))
+<P><STRONG><a name="[cc]"></a>LedDrvInit</STRONG> (Thumb, 108 bytes, Stack size 16 bytes, led_drv.o(i.LedDrvInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = LedDrvInit &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
 </UL>
 
 <P><STRONG><a name="[14]"></a>MemManage_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_it.o(i.MemManage_Handler))
@@ -1212,7 +1214,7 @@ Global Symbols
 <P><STRONG><a name="[101]"></a>MovInvalidProc</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, mov_invalid.o(i.MovInvalidProc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = MovInvalidProc &rArr; GetMOVFail_PCT &rArr; __aeabi_uldivmod
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetMOVFail_PCT
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetMOVFail_PCT
 <LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalMovLevel
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Invalid_Task
@@ -1239,27 +1241,27 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitIrqAfterBoot
 </UL>
 
-<P><STRONG><a name="[cf]"></a>NorflashDrvInit</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, norflash_drv.o(i.NorflashDrvInit))
+<P><STRONG><a name="[d1]"></a>NorflashDrvInit</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, norflash_drv.o(i.NorflashDrvInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = NorflashDrvInit &rArr; SPIInit &rArr; Gpio_Iint &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
 </UL>
 
 <P><STRONG><a name="[1c]"></a>PVD_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.PVD_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
 <P><STRONG><a name="[11a]"></a>PWR_BackupAccessCmd</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f10x_pwr.o(i.PWR_BackupAccessCmd))
-<BR><BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+<BR><BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 <LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSetRtcTime
 </UL>
 
 <P><STRONG><a name="[19]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.PendSV_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
-<P><STRONG><a name="[dc]"></a>PresetNum_Surge</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, surgemdl_drv.o(i.PresetNum_Surge))
-<BR><BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseSurgeHistoryInfo
+<P><STRONG><a name="[de]"></a>PresetNum_Surge</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, surgemdl_drv.o(i.PresetNum_Surge))
+<BR><BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseSurgeHistoryInfo
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitSysParam
 </UL>
 
@@ -1276,7 +1278,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[119]"></a>RCC_APB1PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_APB1PeriphClockCmd))
-<BR><BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+<BR><BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 <LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
 <LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSetRtcTime
 <LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeUartInit
@@ -1288,10 +1290,10 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[88]"></a>RCC_APB2PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd))
-<BR><BR>[Called By]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Switchinput_DrvInit
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDrvInit
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyDrvInit
-<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Eeprom_GPIO_Config
+<BR><BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Switchinput_DrvInit
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDrvInit
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyDrvInit
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Eeprom_GPIO_Config
 <LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
 <LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchInit
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
@@ -1321,37 +1323,37 @@ Global Symbols
 <P><STRONG><a name="[12a]"></a>RCC_GetFlagStatus</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, stm32f10x_rcc.o(i.RCC_GetFlagStatus))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = RCC_GetFlagStatus
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+<BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 </UL>
 
 <P><STRONG><a name="[129]"></a>RCC_LSEConfig</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_LSEConfig))
-<BR><BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+<BR><BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 </UL>
 
 <P><STRONG><a name="[12c]"></a>RCC_RTCCLKCmd</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_RTCCLKCmd))
-<BR><BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+<BR><BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 </UL>
 
 <P><STRONG><a name="[12b]"></a>RCC_RTCCLKConfig</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_RTCCLKConfig))
-<BR><BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+<BR><BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 </UL>
 
 <P><STRONG><a name="[116]"></a>RTC_EnterConfigMode</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, stm32f10x_rtc.o(i.RTC_EnterConfigMode))
-<BR><BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+<BR><BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 <LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_SetPrescaler
 <LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_SetCounter
 <LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSetRtcTime
 </UL>
 
 <P><STRONG><a name="[11c]"></a>RTC_ExitConfigMode</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32f10x_rtc.o(i.RTC_ExitConfigMode))
-<BR><BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+<BR><BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 <LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_SetPrescaler
 <LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_SetCounter
 <LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSetRtcTime
 </UL>
 
 <P><STRONG><a name="[e9]"></a>RTC_GetCounter</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32f10x_rtc.o(i.RTC_GetCounter))
-<BR><BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetRtcTime
+<BR><BR>[Called By]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetRtcTime
 </UL>
 
 <P><STRONG><a name="[11b]"></a>RTC_SetCounter</STRONG> (Thumb, 24 bytes, Stack size 4 bytes, stm32f10x_rtc.o(i.RTC_SetCounter))
@@ -1360,7 +1362,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_ExitConfigMode
 <LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_EnterConfigMode
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+<BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 <LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSetRtcTime
 </UL>
 
@@ -1370,17 +1372,17 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_ExitConfigMode
 <LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_EnterConfigMode
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+<BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 <LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSetRtcTime
 </UL>
 
 <P><STRONG><a name="[118]"></a>RTC_WaitForLastTask</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32f10x_rtc.o(i.RTC_WaitForLastTask))
-<BR><BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+<BR><BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 <LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSetRtcTime
 </UL>
 
 <P><STRONG><a name="[12d]"></a>RTC_WaitForSynchro</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, stm32f10x_rtc.o(i.RTC_WaitForSynchro))
-<BR><BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+<BR><BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 </UL>
 
 <P><STRONG><a name="[124]"></a>ReadEepromData</STRONG> (Thumb, 126 bytes, Stack size 16 bytes, eeprom_drv.o(i.ReadEepromData))
@@ -1414,11 +1416,11 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadDataWithCheck
 </UL>
-<BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StoreSurgeNum
+<BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StoreSurgeNum
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitSysParam
 </UL>
 
-<P><STRONG><a name="[cd]"></a>RtcDrvInit</STRONG> (Thumb, 184 bytes, Stack size 8 bytes, rtc_drv.o(i.RtcDrvInit))
+<P><STRONG><a name="[cf]"></a>RtcDrvInit</STRONG> (Thumb, 184 bytes, Stack size 8 bytes, rtc_drv.o(i.RtcDrvInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = RtcDrvInit &rArr; DelayNms &rArr; DelayNus
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayNms
@@ -1438,19 +1440,19 @@ Global Symbols
 <LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWR_BackupAccessCmd
 <LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_WaitForSynchro
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
 </UL>
 
 <P><STRONG><a name="[17]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.SVC_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
-<P><STRONG><a name="[d2]"></a>SensorDrvInit</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, sensor_drv.o(i.SensorDrvInit))
+<P><STRONG><a name="[d4]"></a>SensorDrvInit</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, sensor_drv.o(i.SensorDrvInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = SensorDrvInit &rArr; SurgeMdlDrvInit &rArr; SurgeUartInit &rArr; USART_Init &rArr; RCC_GetClocksFreq
 </UL>
 <BR>[Calls]<UL><LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempDrvInit
 <LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeMdlDrvInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
 </UL>
 
 <P><STRONG><a name="[131]"></a>SensorDrvProc</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, sensor_drv.o(i.SensorDrvProc))
@@ -1467,7 +1469,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = Sensor_Task &rArr; SensorDrvProc &rArr; SurgeHistoryProc &rArr; StoreSurgeNum &rArr; WriteSysParam &rArr; WriteDataWithCheck &rArr; WriteEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus
 </UL>
 <BR>[Calls]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvProc
-<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FeedDog
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FeedDog
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(.data)
 </UL>
@@ -1488,9 +1490,9 @@ Global Symbols
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
 <LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2uiz
 <LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSensorData
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetRtcTime
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetRtcTime
 <LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetRefreshflag
-<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StoreSurgeNum
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StoreSurgeNum
 <LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RecordSurgeParam
 </UL>
 <BR>[Called By]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvProc
@@ -1503,20 +1505,20 @@ Global Symbols
 <LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeGpioInit
 <LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeDmaInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvInit
+<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvInit
 </UL>
 
 <P><STRONG><a name="[133]"></a>SurgemdlDataPro</STRONG> (Thumb, 114 bytes, Stack size 0 bytes, surgemdl_drv.o(i.SurgemdlDataPro))
 <BR><BR>[Called By]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvProc
 </UL>
 
-<P><STRONG><a name="[cc]"></a>Switchinput_DrvInit</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, switch_drv.o(i.Switchinput_DrvInit))
+<P><STRONG><a name="[ce]"></a>Switchinput_DrvInit</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, switch_drv.o(i.Switchinput_DrvInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = Switchinput_DrvInit &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
 </UL>
 
 <P><STRONG><a name="[1a]"></a>SysTick_Handler</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, systick_drv.o(i.SysTick_Handler))
@@ -1603,7 +1605,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
 <LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvInit
+<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvInit
 </UL>
 
 <P><STRONG><a name="[132]"></a>TempSensorProc</STRONG> (Thumb, 112 bytes, Stack size 24 bytes, ntc_drv.o(i.TempSensorProc))
@@ -1613,19 +1615,19 @@ Global Symbols
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
 <LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PushDataToBuf
 <LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MedianAvgFltr
-<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetAdcVal
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetAdcVal
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcToTemp10Mpl
 </UL>
 <BR>[Called By]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvProc
 </UL>
 
-<P><STRONG><a name="[da]"></a>ToggleLed</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, led_drv.o(i.ToggleLed))
+<P><STRONG><a name="[dc]"></a>ToggleLed</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, led_drv.o(i.ToggleLed))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ToggleLed
 </UL>
 <BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_WriteBit
 <LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseSurgeHistoryInfo
+<BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseSurgeHistoryInfo
 </UL>
 
 <P><STRONG><a name="[114]"></a>TurnOffLed</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, led_drv.o(i.TurnOffLed))
@@ -1661,7 +1663,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
+<BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
 <LI><a href="#[0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HmiTask
 </UL>
 
@@ -1782,7 +1784,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteDataWithCheck
 </UL>
-<BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StoreSurgeNum
+<BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StoreSurgeNum
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetModbusAddrParam
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitSysParam
 </UL>
@@ -1850,7 +1852,7 @@ Global Symbols
 <LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_DATA
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProcKeyEvent
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
 <LI><a href="#[0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HmiTask
 </UL>
 
@@ -1992,7 +1994,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Init
 <LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitIrqAfterBoot
 <LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TaskHandler
-<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppInit
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
@@ -2145,20 +2147,20 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[c8]"></a>DrvInit</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, main.o(i.DrvInit))
+<P><STRONG><a name="[ca]"></a>DrvInit</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, main.o(i.DrvInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = DrvInit &rArr; SensorDrvInit &rArr; SurgeMdlDrvInit &rArr; SurgeUartInit &rArr; USART_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Switchinput_DrvInit
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvInit
-<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
-<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NorflashDrvInit
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDrvInit
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyDrvInit
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IwdgDrvInit
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EepromDrvInit
+<BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Switchinput_DrvInit
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvInit
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NorflashDrvInit
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDrvInit
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyDrvInit
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IwdgDrvInit
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EepromDrvInit
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayNms
-<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayInit
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayInit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -2201,19 +2203,19 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = RecordSurgeParam &rArr; WriteNorflashData &rArr; ProgramNorflashPage &rArr; WaitNorflashWriteEnd &rArr; SPIReadWriteByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteNorflashData
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashForWrite
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashForWrite
 </UL>
 <BR>[Called By]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeHistoryProc
 </UL>
 
-<P><STRONG><a name="[db]"></a>StoreSurgeNum</STRONG> (Thumb, 30 bytes, Stack size 24 bytes, surge_history.o(i.StoreSurgeNum))
+<P><STRONG><a name="[dd]"></a>StoreSurgeNum</STRONG> (Thumb, 30 bytes, Stack size 24 bytes, surge_history.o(i.StoreSurgeNum))
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = StoreSurgeNum &rArr; WriteSysParam &rArr; WriteDataWithCheck &rArr; WriteEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteSysParam
 <LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadSysParam
 </UL>
 <BR>[Called By]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeHistoryProc
-<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseSurgeHistoryInfo
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseSurgeHistoryInfo
 </UL>
 
 <P><STRONG><a name="[100]"></a>SwitchinputProc</STRONG> (Thumb, 122 bytes, Stack size 24 bytes, invalid_app.o(i.SwitchinputProc))
@@ -2221,10 +2223,10 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TurnOnLed
 <LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TurnOffLed
-<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSwitchinputStatus
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSwitchinputStatus
 <LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteNorflashData
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetRtcTime
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashForWrite
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetRtcTime
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashForWrite
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Invalid_Task
 </UL>
@@ -2233,13 +2235,13 @@ Local Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MovInvalidProc
 </UL>
 
-<P><STRONG><a name="[e4]"></a>GetMOVFail_PCT</STRONG> (Thumb, 252 bytes, Stack size 40 bytes, mov_invalid.o(i.GetMOVFail_PCT))
+<P><STRONG><a name="[e6]"></a>GetMOVFail_PCT</STRONG> (Thumb, 252 bytes, Stack size 40 bytes, mov_invalid.o(i.GetMOVFail_PCT))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = GetMOVFail_PCT &rArr; __aeabi_uldivmod
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cfrcmple
-<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cfcmple
+<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cfrcmple
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cfcmple
 <LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSysRunTime
-<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSwitchinputStatus
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSwitchinputStatus
 <LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSensorData
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
@@ -2250,8 +2252,8 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = ProcKeyEvent &rArr; EraseSurgeHistoryInfo &rArr; StoreSurgeNum &rArr; WriteSysParam &rArr; WriteDataWithCheck &rArr; WriteEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear_screen
-<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetKeyVal
-<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseSurgeHistoryInfo
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetKeyVal
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseSurgeHistoryInfo
 </UL>
 <BR>[Called By]<UL><LI><a href="#[0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HmiTask
 </UL>
@@ -2275,10 +2277,12 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMainpage
 </UL>
 
-<P><STRONG><a name="[b8]"></a>DisplayTempInfo</STRONG> (Thumb, 206 bytes, Stack size 32 bytes, hmi_mainpage.o(i.DisplayTempInfo))
+<P><STRONG><a name="[b8]"></a>DisplayTempInfo</STRONG> (Thumb, 232 bytes, Stack size 32 bytes, hmi_mainpage.o(i.DisplayTempInfo))
 <BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = DisplayTempInfo &rArr; LcdDrawString &rArr; display_GB2312_string &rArr; display_graphic_8x16 &rArr; lcd_address &rArr; LCD_WR_REG &rArr; DelayNus
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
+<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cfrcmple
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cfcmple
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
 <LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2uiz
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2f
@@ -2295,7 +2299,7 @@ Local Symbols
 <P><STRONG><a name="[b7]"></a>DisplayTime</STRONG> (Thumb, 70 bytes, Stack size 40 bytes, hmi_mainpage.o(i.DisplayTime))
 <BR><BR>[Stack]<UL><LI>Max Depth = 216<LI>Call Chain = DisplayTime &rArr; LcdDrawString &rArr; display_GB2312_string &rArr; display_graphic_8x16 &rArr; lcd_address &rArr; LCD_WR_REG &rArr; DelayNus
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetRtcTime
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetRtcTime
 <LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LcdDrawString
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
@@ -2383,7 +2387,7 @@ Local Symbols
 <P><STRONG><a name="[c]"></a>ModbusGetDispersed</STRONG> (Thumb, 62 bytes, Stack size 32 bytes, modbus_app.o(i.ModbusGetDispersed))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = ModbusGetDispersed &rArr; GetSwitchinputStatus
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSwitchinputStatus
+<BR>[Calls]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSwitchinputStatus
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> modbus_app.o(.data)
 </UL>
@@ -2466,13 +2470,13 @@ Local Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> modbus_app.o(.constdata)
 </UL>
-<P><STRONG><a name="[d3]"></a>Eeprom_GPIO_Config</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, eeprom_drv.o(i.Eeprom_GPIO_Config))
+<P><STRONG><a name="[d5]"></a>Eeprom_GPIO_Config</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, eeprom_drv.o(i.Eeprom_GPIO_Config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Eeprom_GPIO_Config &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EepromDrvInit
+<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EepromDrvInit
 </UL>
 
 <P><STRONG><a name="[f4]"></a>I2CReadByte</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, eeprom_drv.o(i.I2CReadByte))
@@ -2533,13 +2537,13 @@ Local Symbols
 <LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
 </UL>
 
-<P><STRONG><a name="[e3]"></a>KeyScan</STRONG> (Thumb, 494 bytes, Stack size 24 bytes, key_drv.o(i.KeyScan))
+<P><STRONG><a name="[e5]"></a>KeyScan</STRONG> (Thumb, 494 bytes, Stack size 24 bytes, key_drv.o(i.KeyScan))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = KeyScan
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSysRunTime
 <LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetKeyVal
+<BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetKeyVal
 </UL>
 
 <P><STRONG><a name="[a1]"></a>DisableNorflashWrite</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, norflash_drv.o(i.DisableNorflashWrite))
@@ -2549,10 +2553,10 @@ Local Symbols
 <LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIStart
 <LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIReadWriteByte
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashSector
+<BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashSector
 </UL>
 
-<P><STRONG><a name="[d5]"></a>EnableNorflashWrite</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, norflash_drv.o(i.EnableNorflashWrite))
+<P><STRONG><a name="[d7]"></a>EnableNorflashWrite</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, norflash_drv.o(i.EnableNorflashWrite))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = EnableNorflashWrite &rArr; SPIReadWriteByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIStop
@@ -2560,20 +2564,20 @@ Local Symbols
 <LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIReadWriteByte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProgramNorflashPage
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashSector
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashSector
 </UL>
 
-<P><STRONG><a name="[d7]"></a>EraseNorflashSector</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, norflash_drv.o(i.EraseNorflashSector))
+<P><STRONG><a name="[d9]"></a>EraseNorflashSector</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, norflash_drv.o(i.EraseNorflashSector))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = EraseNorflashSector &rArr; WaitNorflashWriteEnd &rArr; SPIReadWriteByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitNorflashWriteEnd
+<BR>[Calls]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitNorflashWriteEnd
 <LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIStop
 <LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIStart
 <LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIReadWriteByte
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnableNorflashWrite
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnableNorflashWrite
 <LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisableNorflashWrite
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashForWrite
+<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashForWrite
 </UL>
 
 <P><STRONG><a name="[ee]"></a>Gpio_Iint</STRONG> (Thumb, 98 bytes, Stack size 8 bytes, norflash_drv.o(i.Gpio_Iint))
@@ -2581,7 +2585,7 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIInit
 </UL>
@@ -2589,11 +2593,11 @@ Local Symbols
 <P><STRONG><a name="[122]"></a>ProgramNorflashPage</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, norflash_drv.o(i.ProgramNorflashPage))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = ProgramNorflashPage &rArr; WaitNorflashWriteEnd &rArr; SPIReadWriteByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitNorflashWriteEnd
+<BR>[Calls]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitNorflashWriteEnd
 <LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIStop
 <LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIStart
 <LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIReadWriteByte
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnableNorflashWrite
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnableNorflashWrite
 </UL>
 <BR>[Called By]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteNorflashData
 </UL>
@@ -2605,7 +2609,7 @@ Local Symbols
 <LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
 <LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Gpio_Iint
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NorflashDrvInit
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NorflashDrvInit
 </UL>
 
 <P><STRONG><a name="[a3]"></a>SPIReadWriteByte</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, norflash_drv.o(i.SPIReadWriteByte))
@@ -2616,10 +2620,10 @@ Local Symbols
 <LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadNorflashData
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitNorflashWriteEnd
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitNorflashWriteEnd
 <LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProgramNorflashPage
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashSector
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnableNorflashWrite
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashSector
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnableNorflashWrite
 <LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisableNorflashWrite
 </UL>
 
@@ -2629,10 +2633,10 @@ Local Symbols
 <BR>[Calls]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
 </UL>
 <BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadNorflashData
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitNorflashWriteEnd
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitNorflashWriteEnd
 <LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProgramNorflashPage
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashSector
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnableNorflashWrite
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashSector
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnableNorflashWrite
 <LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisableNorflashWrite
 </UL>
 
@@ -2642,14 +2646,14 @@ Local Symbols
 <BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
 </UL>
 <BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadNorflashData
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitNorflashWriteEnd
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitNorflashWriteEnd
 <LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProgramNorflashPage
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashSector
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnableNorflashWrite
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashSector
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnableNorflashWrite
 <LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisableNorflashWrite
 </UL>
 
-<P><STRONG><a name="[d8]"></a>WaitNorflashWriteEnd</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, norflash_drv.o(i.WaitNorflashWriteEnd))
+<P><STRONG><a name="[da]"></a>WaitNorflashWriteEnd</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, norflash_drv.o(i.WaitNorflashWriteEnd))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = WaitNorflashWriteEnd &rArr; SPIReadWriteByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIStop
@@ -2657,7 +2661,7 @@ Local Symbols
 <LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIReadWriteByte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProgramNorflashPage
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashSector
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseNorflashSector
 </UL>
 
 <P><STRONG><a name="[107]"></a>LCD12864_GPIO_Config</STRONG> (Thumb, 168 bytes, Stack size 8 bytes, lcd12864_drv.o(i.LCD12864_GPIO_Config))
@@ -2665,9 +2669,9 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
+<BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
 </UL>
 
 <P><STRONG><a name="[108]"></a>LCD_WR_DATA</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, lcd12864_drv.o(i.LCD_WR_DATA))
@@ -2690,7 +2694,7 @@ Local Symbols
 <LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
 <LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayNus
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
+<BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd12864DrvInit
 <LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_address
 </UL>
 
@@ -2812,11 +2816,11 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcToTemp10Mpl
 </UL>
 
-<P><STRONG><a name="[df]"></a>GetAdcVal</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, ntc_drv.o(i.GetAdcVal))
+<P><STRONG><a name="[e1]"></a>GetAdcVal</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, ntc_drv.o(i.GetAdcVal))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GetAdcVal
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_GetFlagStatus
-<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_GetConversionValue
+<BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_GetFlagStatus
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_GetConversionValue
 </UL>
 <BR>[Called By]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempSensorProc
 </UL>
@@ -2825,7 +2829,7 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = GpioInit &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempDrvInit
 </UL>
@@ -2865,7 +2869,7 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SurgeGpioInit &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SurgeMdlDrvInit
 </UL>
@@ -2888,7 +2892,7 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = GpioInit &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[16d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialInit
 </UL>
@@ -2897,7 +2901,7 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SwitchInit &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[16d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialInit
 </UL>
